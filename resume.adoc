@@ -52,7 +52,7 @@ image:head.jpg[Head image, 150, 200,role="right"]
 - *Works*: general affairs, network and equipment management
 - *Place*: Xinzhuang, New Taipei City (新北市新莊)
 
-### Teather assistant for _system programming_ class in NTU (2017 fall)
+### Teacher assistant for _system programming_ class in NTU (2017 fall)
 
 - *Position*: a paid teacher assistant
 - *Works*: System programming is a required course in CS department of NTU.
@@ -74,7 +74,7 @@ image:head.jpg[Head image, 150, 200,role="right"]
 ### Book author of _機器人程式設計與實作：使用 Java_ (2013)
 
 * ISBN: link:http://isbn.ncl.edu.tw/NCL_ISBNNet/main_DisplayRecord.php?PHPSESSID=c8kchinqo5ncq873i47c4sqkb0&Pact=Display&Pstart=1[9789862768228]
-* This is an introductive book for link:http://www.lejos.org/[leJOS] framework on LEGO NXT robots.
+* A book introduces link:http://www.lejos.org/[leJOS] framework on LEGO NXT robots.
 
 ### Contributor of Chinese Wikipedia (2010 - present)
 
