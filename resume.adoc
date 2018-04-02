@@ -1,0 +1,101 @@
+# Hsiang-Jui (Jerry) Lin
+:nofooter:
+
+Read the résumé in link:http://wtf.csie.org/resume/resume.pdf[PDF], http://wtf.csie.org/resume/resume.html[HTML], or http://wtf.csie.org/resume/resume.adoc[AsciiDoc source code].
+
+## Personal Information
+
+image:head.jpg[Head image, 150, 200,role="right"]
+
+- *Name*: 林祥瑞, Hsiang-Jui Lin (formal), or Jerry Lin (informal)
+- *Phone*: +866 933 652 112
+- *Mail*: jerry73204@{*mailto:jerry73204@gmail.com[gmail.com]*, mailto:jerry73204@hotmail.com[hotmail.com], mailto:jerry73204@163.com[163.com], mailto:jerry73204@yahoo.com.tw[yahoo.com.tw]}
+- *Facebook*: link:https://www.facebook.com/xiangrui.lin[profile]
+- *LinkedIn*: link:https://www.linkedin.com/in/jerry-lin-97733463[profile]
+- *Military service*: completed in 2017
+
+## Education
+
+### Bachelor's degree (2012 - 2016)
+
+- *School*: National Taiwan University (NTU), Taipei, Taiwan (R.O.C.)
+- *Major* Computer science and information engineering
+
+### Master's degree (2017 - present)
+
+- *School* National Taiwan University (NTU), Taipei, Taiwan (R.O.C.)
+- *Major*: Computer science and information engineering
+- *Status*: currently a student in link:http://newslabx.csie.ntu.edu.tw/[NEWSLAB], under instructor link:https://drchishengshihswebsite.wordpress.com/[施吉昇]
+- Notice: Enrollment is finished in 2016. The studies starts in 2017 due to military service.
+
+## Honors & Awards
+
+### Second place in _104 年金盾獎_ (2015)
+
+- *Reference*: link:https://www.nicst.ey.gov.tw/News_Content4.aspx?n=11EC3BA2351F93AA&sms=4D833E26864BB926&s=60F37FB45AC653BD[行政院國家資通安全會報]
+
+### 潛力無窮獎 in _103 年金盾獎_ (2014)
+
+- *Reference*: link:https://web.archive.org/web/20140321005458/http://security.cisanet.org.tw:80/?i=3&mc=302[Web archive for official site]
+
+## Experience
+
+### CAVEDU (2010 - present)
+
+- *Position*: part-time engineer, book author
+- *Works*: AppInventor project, The book for LeJOS
+- *Place*: Wanhua, Taipei City (臺北市萬華)
+
+### Institute for the Blind of Taiwan aka. 臺灣盲人重建院 (2016 - 2017)
+
+- *Position*: 1-year substitute military service
+- *Works*: general affairs, network and equipment management
+- *Place*: Xinzhuang, New Taipei City (新北市新莊)
+
+### Teather assistant for _system programming_ class in NTU (2017 fall)
+
+- *Position*: a paid teacher assistant
+- *Works*: System programming is a required course in CS department of NTU.
+- *Place*: Da'an, Taipei City (臺北市大安)
+- *Reference*: link:https://systemprogrammingatntu.github.io/[Official site]
+
+## Publications & Contributions
+
+### MIT AppInventor project (2016 - 2018)
+
+* link:https://github.com/mit-cml/appinventor-sources/pull/729[Pull request] for LEGO EV3 support
+* link:https://github.com/mit-cml/appinventor-extensions/pull/12[Pull request] for MediaTek MT7697 support
+
+### Undergraduate study on graph theory (2016)
+
+* The study focuses on total and paired domination problems on distance-hereditary graph. We discovered an alternative optimal solution to total domination based on split decomposition.
+* You may refer to the link:https://drive.google.com/file/d/18H1fvSZ7td3vArSJaeoTKkLjJ-DqApaP/view?usp=sharing[handout].
+
+### Book author of _機器人程式設計與實作：使用 Java_ (2013)
+
+* ISBN: link:http://isbn.ncl.edu.tw/NCL_ISBNNet/main_DisplayRecord.php?PHPSESSID=c8kchinqo5ncq873i47c4sqkb0&Pact=Display&Pstart=1[9789862768228]
+* This is an introductive book for link:http://www.lejos.org/[leJOS] framework on LEGO NXT robots.
+
+### Contributor of Chinese Wikipedia (2010 - present)
+
+* link:https://zh.wikipedia.org/wiki/User:Jerry73204[User page] on Wikipedia
+
+## Ability & Skills
+
+C/C++::
+You may check my submissions on link:http://codeforces.com/submissions/jerry73204[Codeforces].
+
+Java::
+I'm the book author of _機器人程式設計與實作：使用 Java_, a Java based project.
+
+Linux hosting & shell script::
+I host an Arch Linux server and BIND server for domain wtf.csie.org (no websites available).
+
+Linux System programming::
+I was a TA for system programming course.
+
+Web languages (HTML, CSS, JavaScript), Markdown, AsciiDoc, and other markup languages::
+This résumé is written in AsciiDoc.
+
+Some ARM and x86 assembly::
+This is a required skill for 金盾獎 contest.
