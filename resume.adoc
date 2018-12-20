@@ -59,6 +59,12 @@ image:head.jpg[Head image, 150, 200,role="right"]
 - *Place*: Da'an, Taipei City (臺北市大安)
 - *Reference*: link:https://systemprogrammingatntu.github.io/[Official site]
 
+### Microsoft Taiwan intern (2018 June - 2019 June)
+
+- *Position*: RDI
+- *Works*: AI and Bing map related
+- *Place*: Microsoft Taiwan
+
 ## Publications & Contributions
 
 ### MIT AppInventor project (2016 - 2018)
