@@ -90,6 +90,11 @@ Checkout my link:https://zh.wikipedia.org/wiki/User:Jerry73204[user page] on Wik
 
 link:https://aur.archlinux.org/[AUR] is a community-driven repository for Arch Linux users. I maintain the packages in the link:https://aur.archlinux.org/packages/?K=jerry73204&SeB=m[list] on AUR.
 
+### TorFS: Abusing Tor's Onion service to store data
+
+* Intro: It was my side-project when studying master degree. Our team exploited free storage from Tor's Onion service, which is not intended for that purpose. We successfully built a virtual file system that stores data blocks into RSA public keys, and distributed them to the rest of Onoin network.
+* Repository: link:https://github.com/jerry73204/cns-final-tor-store[https://github.com/jerry73204/cns-final-tor-store]
+
 ## Ability & Skills
 
 C/C++::
