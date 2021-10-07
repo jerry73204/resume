@@ -20,10 +20,15 @@ Tasks:  _System Programming_ course TA (2016-2017)
 [horizontal]
 2010 - 2016:: **Software Developer at CAVEDU教育團隊** +
 Tasks: AppInventor project, Author of LeJOS tutorial book
+
 2016 Jul. - 2017 Jul.:: **Substitute Military Service at 臺灣盲人重建院** +
 Tasks: General affairs, develop automatic official documents image to text
+
 2018 Jun. - 2019 Jun.:: **R&D Assistant at Microsoft Taiwan** +
 Tasks: Bing's Reverse Geocoder backend development
+
+2021 Sep. - 2021 Sep.:: **R&D Assistant at ADLINK Technology Inc.** +
+Tasks: Develop distributed decision using Zenoh
 
 
 [#academic-record]
