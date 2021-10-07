@@ -1,116 +1,72 @@
-# Hsiang-Jui (Jerry) Lin
+:doctype: book
+:imagesdir: ./images
+:iconsdir: ./icons
 :nofooter:
 
-Read the résumé in link:http://wtf.csie.org/resume/resume.pdf[PDF], http://wtf.csie.org/resume/resume.html[HTML], or http://wtf.csie.org/resume/resume.adoc[AsciiDoc source code].
+Hsiang-Jui Lin:: email: mailto:jerry73204@gmail.com[jerry73204@gmail.com] +
+image:GitHub-Mark-64px.png[20,20] : link:https://github.com/jerry73204[github.com/jerry73204] +
 
-## Personal Information
+[#academic-record]
+=== Academic Record
+'''
+[horizontal]
+2012-2016:: _National Taiwan University, Bachelor of Computer Science and Information Engineering_
+2017-2021:: _National Taiwan University, Master of Computer Science and Information Engineering_ +
+Tasks:  _System Programming_ course TA (2016-2017)
 
-image:head.jpg[Head image, 150, 200,role="right"]
+[#work-experience]
+=== Work Experience
+'''
+[horizontal]
+2010 - 2016:: **Software Developer at CAVEDU教育團隊** +
+Tasks: AppInventor project, Author of LeJOS tutorial book
+2016 Jul. - 2017 Jul.:: **Substitute Military Service at 臺灣盲人重建院** +
+Tasks: General affairs, develop automatic official documents image to text
+2018 Jun. - 2019 Jun.:: **R&D Assistant at Microsoft Taiwan** +
+Tasks: Bing's Reverse Geocoder backend development
 
-- *Name*: 林祥瑞, Hsiang-Jui Lin (formal), or Jerry Lin (informal)
-- *Phone*: +866 933 652 112
-- *Mail*: jerry73204@{*mailto:jerry73204@gmail.com[gmail.com]*, mailto:jerry73204@hotmail.com[hotmail.com], mailto:jerry73204@163.com[163.com], mailto:jerry73204@yahoo.com.tw[yahoo.com.tw]}
-- *Facebook*: link:https://www.facebook.com/xiangrui.lin[profile]
-- *LinkedIn*: link:https://www.linkedin.com/in/jerry-lin-97733463[profile]
-- *Military service*: completed in 2017
 
-## Education
+[#academic-record]
+=== Projects and Publications
 
-### Bachelor's degree (2012 - 2016)
+'''
+[horizontal]
+Author of _機器人程式設計與實作：使用 Java_ book (2013):: A book introduces link:http://www.lejos.org/[leJOS] framework on LEGO NXT robots. +
+ISBN: link:http://isbn.ncl.edu.tw/NCL_ISBNNet/main_DisplayRecord.php?PHPSESSID=c8kchinqo5ncq873i47c4sqkb0&Pact=Display&Pstart=1[9789862768228]
 
-- *School*: National Taiwan University (NTU), Taipei, Taiwan (R.O.C.)
-- *Major* Computer science and information engineering
+MIT AppInventor project (2016 - 2018):: Task: Focus on robotic related features WYSIWYG Android programming +
+Developed Lego EV3 (link:https://github.com/mit-cml/appinventor-sources/pull/729[link]) and MediaTek MT7697 link:https://github.com/mit-cml/appinventor-extensions/pull/12[link] features.
 
-### Master's degree (2017 - present)
+Undergraduate study on graph theory (2016):: The study focuses on total and paired domination problems on distance-hereditary graph. +
+Discovered an alternative optimal solution to total domination based on split decomposition.
+The handout can be found in the link:https://drive.google.com/file/d/18H1fvSZ7td3vArSJaeoTKkLjJ-DqApaP/view?usp=sharing[link].
 
-- *School* National Taiwan University (NTU), Taipei, Taiwan (R.O.C.)
-- *Major*: Computer science and information engineering
-- *Status*: currently a student in link:http://newslabx.csie.ntu.edu.tw/[NEWSLAB]. My instructor is link:https://drchishengshihswebsite.wordpress.com/[Chi-Sheng Shih (施吉昇)]
-- Notice: Enrollment is finished in 2016. My studies starts in 2017 due to military service.
+TorFS (2019):: It's a side project that exploits free storage from Tor's Onion service. +
+ We successfully built a virtual file system that stores data blocks into RSA public keys, and distributed them to the rest of Onoin network. +
+The repository can be found in the link:https://github.com/jerry73204/cns-final-tor-store[link].
 
-## Honors & Awards
+Hacky Arm (2020):: A side project to design a robotic arm capable of grabbing objects using RealSense.
+It combines computer vision and position estimation of objects using Intel RealSense depth camera, and instructs the arm to grab objects accordingly. +
+The repository can be found in the link:https://github.com/jerry73204/hacky-arm[link].
 
-### Second place in _104 年金盾獎_ (2015)
+Wayside (2019-2021):: The lab project develops a complete data processing system for Taiwanese traffic scenes.
+The tasks conver the data collection, sensor hardware design, data format design and pipelining and data analysis.
+It aims to combine the data from cameras and LiDARs, and develop fusing algorithms to get the best of the both sensors. +
+The reference information can be found in the link:https://newslabntu.github.io/DanielFolio/projects/3_project/[page].
 
-- *Reference*: link:https://www.nicst.ey.gov.tw/News_Content4.aspx?n=11EC3BA2351F93AA&sms=4D833E26864BB926&s=60F37FB45AC653BD[行政院國家資通安全會報]
+typ (2020):: A side project to develop the type level programming language for Rust. +
+It achieves compile-time, type-level arithmetic computations. It was developed to pave the way
+for building type-safe tensor types in Rust.
+The repository can be found in the link:https://github.com/jerry73204/typ[link].
 
-### 潛力無窮獎 in _102 年金盾獎_ (2013)
+par-stream (2020):: A side project to develop building blocks of asynchronous parallel stream for Rust.
+It provides high-level stream types with parallelism and asynchronous programming in mind.
+The repository can be found in the link:https://github.com/jerry73204/par-stream[link].
 
-- *Reference*: link:https://web.archive.org/web/20140321005458/http://security.cisanet.org.tw:80/?i=3&mc=302[Web archive for official site]
 
-## Experience
+=== Honors & Awards
 
-### CAVEDU (2010 - present)
-
-- *Position*: part-time engineer, book author
-- *Works*: AppInventor project, The book for LeJOS
-- *Place*: Wanhua, Taipei City (臺北市萬華)
-
-### Institute for the Blind of Taiwan aka. 臺灣盲人重建院 (2016 - 2017)
-
-- *Position*: 1-year substitute military service
-- *Works*: general affairs, network and equipment management
-- *Place*: Xinzhuang, New Taipei City (新北市新莊)
-
-### Teacher assistant for _system programming_ class in NTU (2017 fall)
-
-- *Position*: a paid teacher assistant
-- *Works*: System programming is a required course in CS department of NTU.
-- *Place*: Da'an, Taipei City (臺北市大安)
-- *Reference*: link:https://systemprogrammingatntu.github.io/[Official site]
-
-### Microsoft Taiwan intern (2018 June - 2019 June)
-
-- *Position*: RDI
-- *Works*: AI and Bing map related
-- *Place*: Microsoft Taiwan
-
-## Publications & Contributions
-
-### MIT AppInventor project (2016 - 2018)
-
-* link:https://github.com/mit-cml/appinventor-sources/pull/729[Pull request] for LEGO EV3 support
-* link:https://github.com/mit-cml/appinventor-extensions/pull/12[Pull request] for MediaTek MT7697 support
-
-### Undergraduate study on graph theory (2016)
-
-* The study focuses on total and paired domination problems on distance-hereditary graph. We discovered an alternative optimal solution to total domination based on split decomposition.
-* You may refer to the link:https://drive.google.com/file/d/18H1fvSZ7td3vArSJaeoTKkLjJ-DqApaP/view?usp=sharing[handout].
-
-### Book author of _機器人程式設計與實作：使用 Java_ (2013)
-
-* ISBN: link:http://isbn.ncl.edu.tw/NCL_ISBNNet/main_DisplayRecord.php?PHPSESSID=c8kchinqo5ncq873i47c4sqkb0&Pact=Display&Pstart=1[9789862768228]
-* A book introduces link:http://www.lejos.org/[leJOS] framework on LEGO NXT robots.
-
-### Contributor of Chinese Wikipedia (2010 - present)
-
-Checkout my link:https://zh.wikipedia.org/wiki/User:Jerry73204[user page] on Wikipedia.
-
-### Contributor of AUR (2014 - present)
-
-link:https://aur.archlinux.org/[AUR] is a community-driven repository for Arch Linux users. I maintain the packages in the link:https://aur.archlinux.org/packages/?K=jerry73204&SeB=m[list] on AUR.
-
-### TorFS: Abusing Tor's Onion service to store data
-
-* Intro: It was my side-project when studying master degree. Our team exploited free storage from Tor's Onion service, which is not intended for that purpose. We successfully built a virtual file system that stores data blocks into RSA public keys, and distributed them to the rest of Onoin network.
-* Repository: link:https://github.com/jerry73204/cns-final-tor-store[https://github.com/jerry73204/cns-final-tor-store]
-
-## Ability & Skills
-
-C/C++::
-You may check my submissions on link:http://codeforces.com/submissions/jerry73204[Codeforces].
-
-Java::
-I'm the book author of _機器人程式設計與實作：使用 Java_, a Java based project, and had some experience on Android programming.
-
-Linux & shell script::
-I host an Arch Linux server and BIND server for domain wtf.csie.org (no websites available).
-
-Linux System programming::
-I was a TA for system programming course.
-
-Web languages (HTML, CSS, JavaScript), Markdown, AsciiDoc, and other markup languages::
-This résumé is written in AsciiDoc.
-
-Some ARM and x86 assembly::
-This is a required skill for 金盾獎 contest.
+'''
+[horizontal]
+104 年金盾獎 2nd place (2015):: Reference link:https://www.nicst.ey.gov.tw/News_Content4.aspx?n=11EC3BA2351F93AA&sms=4D833E26864BB926&s=60F37FB45AC653BD[行政院國家資通安全會報]
+102 年金盾獎 潛力無窮獎 (2013) :: Reference link:https://web.archive.org/web/20140321005458/http://security.cisanet.org.tw:80/?i=3&mc=302[Web archive for official site]
