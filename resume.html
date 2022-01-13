@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.16">
-<title>Academic Record</title>
+<meta name="generator" content="Asciidoctor 2.0.17">
+<title>Hsiang-Jui (Jerry) Lin</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -193,7 +193,8 @@ body.toc2.toc-right{padding-left:0;padding-right:20em}}
 #content h1>a.link:hover,h2>a.link:hover,h3>a.link:hover,#toctitle>a.link:hover,.sidebarblock>.content>.title>a.link:hover,h4>a.link:hover,h5>a.link:hover,h6>a.link:hover{color:#a53221}
 details,.audioblock,.imageblock,.literalblock,.listingblock,.stemblock,.videoblock{margin-bottom:1.25em}
 details{margin-left:1.25rem}
-details>summary{cursor:pointer;display:block;position:relative;line-height:1.6;margin-bottom:.625rem;-webkit-tap-highlight-color:transparent}
+details>summary{cursor:pointer;display:block;position:relative;line-height:1.6;margin-bottom:.625rem;outline:none;-webkit-tap-highlight-color:transparent}
+details>summary::-webkit-details-marker{display:none}
 details>summary::before{content:"";border:solid transparent;border-left:solid;border-width:.3em 0 .3em .5em;position:absolute;top:.5em;left:-1.25rem;transform:translateX(15%)}
 details[open]>summary::before{border:solid transparent;border-top:solid;border-width:.5em .3em 0;transform:translateY(15%)}
 details>summary::after{content:"";width:1.25rem;height:1em;position:absolute;top:.3em;left:-1.25rem}
@@ -235,9 +236,8 @@ pre.prettyprint li:not(:first-child) code[data-lang]::before{display:none}
 table.linenotable{border-collapse:separate;border:0;margin-bottom:0;background:none}
 table.linenotable td[class]{color:inherit;vertical-align:top;padding:0;line-height:inherit;white-space:normal}
 table.linenotable td.code{padding-left:.75em}
-table.linenotable td.linenos{border-right:1px solid;opacity:.35;padding-right:.5em}
-pre.pygments .lineno{border-right:1px solid;opacity:.35;display:inline-block;margin-right:.75em}
-pre.pygments .lineno::before{content:"";margin-right:-.125em}
+table.linenotable td.linenos,pre.pygments .linenos{border-right:1px solid;opacity:.35;padding-right:.5em;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+pre.pygments span.linenos{display:inline-block;margin-right:.75em}
 .quoteblock{margin:0 1em 1.25em 1.5em;display:table}
 .quoteblock:not(.excerpt)>.title{margin-left:-1.5em;margin-bottom:.75em}
 .quoteblock blockquote,.quoteblock p{color:rgba(0,0,0,.85);font-size:1.15rem;line-height:1.75;word-spacing:.1em;letter-spacing:0;font-style:italic;text-align:justify}
@@ -274,7 +274,7 @@ table.frame-none>colgroup+*>:first-child>*,table.frame-sides>colgroup+*>:first-c
 table.frame-none>:last-child>:last-child>*,table.frame-sides>:last-child>:last-child>*{border-bottom-width:0}
 table.frame-none>*>tr>:first-child,table.frame-ends>*>tr>:first-child{border-left-width:0}
 table.frame-none>*>tr>:last-child,table.frame-ends>*>tr>:last-child{border-right-width:0}
-table.stripes-all tr,table.stripes-odd tr:nth-of-type(odd),table.stripes-even tr:nth-of-type(even),table.stripes-hover tr:hover{background:#f8f8f7}
+table.stripes-all>*>tr,table.stripes-odd>*>tr:nth-of-type(odd),table.stripes-even>*>tr:nth-of-type(even),table.stripes-hover>*>tr:hover{background:#f8f8f7}
 th.halign-left,td.halign-left{text-align:left}
 th.halign-right,td.halign-right{text-align:right}
 th.halign-center,td.halign-center{text-align:center}
@@ -290,10 +290,11 @@ ol{margin-left:1.75em}
 ul li ol{margin-left:1.5em}
 dl dd{margin-left:1.125em}
 dl dd:last-child,dl dd:last-child>:last-child{margin-bottom:0}
-ol>li p,ul>li p,ul dd,ol dd,.olist .olist,.ulist .ulist,.ulist .olist,.olist .ulist{margin-bottom:.625em}
+li p,ul dd,ol dd,.olist .olist,.ulist .ulist,.ulist .olist,.olist .ulist{margin-bottom:.625em}
 ul.checklist,ul.none,ol.none,ul.no-bullet,ol.no-bullet,ol.unnumbered,ul.unstyled,ol.unstyled{list-style-type:none}
 ul.no-bullet,ol.no-bullet,ol.unnumbered{margin-left:.625em}
 ul.unstyled,ol.unstyled{margin-left:0}
+li>p:empty:only-child::before{content:"";display:inline-block}
 ul.checklist>li>p:first-child{margin-left:-1em}
 ul.checklist>li>p:first-child>.fa-square-o:first-child,ul.checklist>li>p:first-child>.fa-check-square-o:first-child{width:1.25em;font-size:.8em;position:relative;bottom:.125em}
 ul.checklist>li>p:first-child>input[type=checkbox]:first-child{margin-right:.25em}
@@ -336,8 +337,6 @@ sup.footnote a:active,sup.footnoteref a:active{text-decoration:underline}
 #footnotes .footnote a:first-of-type{font-weight:bold;text-decoration:none;margin-left:-1.05em}
 #footnotes .footnote:last-of-type{margin-bottom:0}
 #content #footnotes{margin-top:-.625em;margin-bottom:0;padding:.75em 0}
-.gist .file-data>table{border:0;background:#fff;width:100%;margin-bottom:0}
-.gist .file-data>table td.line-data{width:99%}
 div.unbreakable{page-break-inside:avoid}
 .big{font-size:larger}
 .small{font-size:smaller}
@@ -439,23 +438,37 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="book">
 <div id="header">
+<h1>Hsiang-Jui (Jerry) Lin</h1>
 </div>
 <div id="content">
 <div id="preamble">
 <div class="sectionbody">
-<div class="dlist">
-<dl>
-<dt class="hdlist1">Hsiang-Jui Lin</dt>
-<dd>
-<p>email: <a href="mailto:jerry73204@gmail.com">jerry73204@gmail.com</a><br>
-<span class="image"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpFNTE3OEEyRTk5QTAxMUUyOUExNUJDMTA0NkE4OTA0RCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpFNTE3OEEyRjk5QTAxMUUyOUExNUJDMTA0NkE4OTA0RCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkU1MTc4QTJDOTlBMDExRTI5QTE1QkMxMDQ2QTg5MDREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkU1MTc4QTJEOTlBMDExRTI5QTE1QkMxMDQ2QTg5MDREIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+FYrpWAAABrNJREFUeNrkW2ls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" alt="20" width="20"></span> : <a href="https://github.com/jerry73204">github.com/jerry73204</a><br></p>
-</dd>
-</dl>
+<hr>
+<div class="hdlist">
+<table>
+<tr>
+<td class="hdlist1">
+email
+</td>
+<td class="hdlist2">
+<p><a href="mailto:jerry73204@gmail.com">jerry73204@gmail.com</a><br></p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+github
+</td>
+<td class="hdlist2">
+<p><a href="https://github.com/jerry73204">github.com/jerry73204</a><br></p>
+</td>
+</tr>
+</table>
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="academic-record">Academic Record</h3>
+<div class="sect1">
+<h2 id="academic-record">Academic Record</h2>
+<div class="sectionbody">
 <hr>
 <div class="hdlist">
 <table>
@@ -464,7 +477,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 2012-2016
 </td>
 <td class="hdlist2">
-<p><em>National Taiwan University, Bachelor of Computer Science and Information Engineering</em></p>
+<p><em>National Taiwan University, Bachelor of Computer Science and Information Engineering</em><br>
+Undergraduate thesis: <em>Solving graph domination problem on DH graph using split decomposition</em></p>
 </td>
 </tr>
 <tr>
@@ -473,14 +487,24 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </td>
 <td class="hdlist2">
 <p><em>National Taiwan University, Master of Computer Science and Information Engineering</em><br>
-Tasks:  <em>System Programming</em> course TA (2016-2017)</p>
+Teaching assistant of <em>System Programming</em> course  (2016-2017)</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+2021-
+</td>
+<td class="hdlist2">
+<p><em>National Taiwan University, Doctor of Computer Science and Information Engineering</em> (ongiong)</p>
 </td>
 </tr>
 </table>
 </div>
 </div>
-<div class="sect2">
-<h3 id="work-experience">Work Experience</h3>
+</div>
+<div class="sect1">
+<h2 id="work-experience">Work Experience</h2>
+<div class="sectionbody">
 <hr>
 <div class="hdlist">
 <table>
@@ -489,8 +513,8 @@ Tasks:  <em>System Programming</em> course TA (2016-2017)</p>
 2010 - 2016
 </td>
 <td class="hdlist2">
-<p><strong>Software Developer at CAVEDU教育團隊</strong><br>
-Tasks: AppInventor project, Author of LeJOS tutorial book</p>
+<p><strong>Software Developer at CAVEDU Education (CAVEDU 教育團隊)</strong><br>
+Developer of AppInventor project <a href="#ai2">[ai2]</a>, Authored LeJOS on LEGO NXT book (<a href="#lejos-book">[lejos-book]</a>).</p>
 </td>
 </tr>
 <tr>
@@ -498,8 +522,8 @@ Tasks: AppInventor project, Author of LeJOS tutorial book</p>
 2016 Jul. - 2017 Jul.
 </td>
 <td class="hdlist2">
-<p><strong>Substitute Military Service at 臺灣盲人重建院</strong><br>
-Tasks: General affairs, develop automatic official documents image to text</p>
+<p><strong>Substitute Military Service at Institute for the Blind of Taiwan (臺灣盲人重建院)</strong><br>
+General affairs, develop automatic official documents image to text</p>
 </td>
 </tr>
 <tr>
@@ -508,111 +532,96 @@ Tasks: General affairs, develop automatic official documents image to text</p>
 </td>
 <td class="hdlist2">
 <p><strong>R&amp;D Assistant at Microsoft Taiwan</strong><br>
-Tasks: Bing&#8217;s Reverse Geocoder backend development</p>
+Bing&#8217;s Reverse Geocoder backend development</p>
 </td>
 </tr>
 <tr>
 <td class="hdlist1">
-2021 Sep. - 2021 Sep.
+2021 Sep. - 2022 Sep.
 </td>
 <td class="hdlist2">
 <p><strong>R&amp;D Assistant at ADLINK Technology Inc.</strong><br>
-Tasks: Develop distributed decision using Zenoh</p>
+Develop distributed consensus and traffic control using Zenoh</p>
 </td>
 </tr>
 </table>
 </div>
 </div>
-<div class="sect2">
-<h3 id="academic-record">Projects and Publications</h3>
-<hr>
-<div class="hdlist">
-<table>
-<tr>
-<td class="hdlist1">
-Author of <em>機器人程式設計與實作：使用 Java</em> book (2013)
-</td>
-<td class="hdlist2">
-<p>A book introduces <a href="http://www.lejos.org/">leJOS</a> framework on LEGO NXT robots.<br>
+</div>
+<div class="sect1">
+<h2 id="projects-and-publications">Publications</h2>
+<div class="sectionbody">
+<div id="lejos-book" class="dlist">
+<dl>
+<dt class="hdlist1">(2013) <em>機器人程式設計與實作：使用 Java</em> / <em>Robotic Programming Design and Practices: Using Java</em></dt>
+<dd>
+<p>A book introduces leJOS framework on LEGO NXT robots <a href="#lejos">[lejos]</a>.<br>
 ISBN: <a href="http://isbn.ncl.edu.tw/NCL_ISBNNet/main_DisplayRecord.php?PHPSESSID=c8kchinqo5ncq873i47c4sqkb0&amp;Pact=Display&amp;Pstart=1">9789862768228</a></p>
-</td>
-</tr>
-<tr>
-<td class="hdlist1">
-MIT AppInventor project (2016 - 2018)
-</td>
-<td class="hdlist2">
-<p>Task: Focus on robotic related features WYSIWYG Android programming<br>
-Developed Lego EV3 (<a href="https://github.com/mit-cml/appinventor-sources/pull/729">link</a>) and MediaTek MT7697 <a href="https://github.com/mit-cml/appinventor-extensions/pull/12">link</a> features.</p>
-</td>
-</tr>
-<tr>
-<td class="hdlist1">
-Undergraduate study on graph theory (2016)
-</td>
-<td class="hdlist2">
-<p>The study focuses on total and paired domination problems on distance-hereditary graph.<br>
-Discovered an alternative optimal solution to total domination based on split decomposition.
-The handout can be found in the <a href="https://drive.google.com/file/d/18H1fvSZ7td3vArSJaeoTKkLjJ-DqApaP/view?usp=sharing">link</a>.</p>
-</td>
-</tr>
-<tr>
-<td class="hdlist1">
-TorFS (2019)
-</td>
-<td class="hdlist2">
-<p>It&#8217;s a side project that exploits free storage from Tor&#8217;s Onion service.<br>
- We successfully built a virtual file system that stores data blocks into RSA public keys, and distributed them to the rest of Onoin network.<br>
-The repository can be found in the <a href="https://github.com/jerry73204/cns-final-tor-store">link</a>.</p>
-</td>
-</tr>
-<tr>
-<td class="hdlist1">
-Hacky Arm (2020)
-</td>
-<td class="hdlist2">
-<p>A side project to design a robotic arm capable of grabbing objects using RealSense.
-It combines computer vision and position estimation of objects using Intel RealSense depth camera, and instructs the arm to grab objects accordingly.<br>
-The repository can be found in the <a href="https://github.com/jerry73204/hacky-arm">link</a>.</p>
-</td>
-</tr>
-<tr>
-<td class="hdlist1">
-Wayside (2019-2021)
-</td>
-<td class="hdlist2">
-<p>The lab project develops a complete data processing system for Taiwanese traffic scenes.
-The tasks conver the data collection, sensor hardware design, data format design and pipelining and data analysis.
-It aims to combine the data from cameras and LiDARs, and develop fusing algorithms to get the best of the both sensors.<br>
-The reference information can be found in the <a href="https://newslabntu.github.io/DanielFolio/projects/3_project/">page</a>.</p>
-</td>
-</tr>
-<tr>
-<td class="hdlist1">
-typ (2020)
-</td>
-<td class="hdlist2">
-<p>A side project to develop the type level programming language for Rust.<br>
-It achieves compile-time, type-level arithmetic computations. It was developed to pave the way
-for building type-safe tensor types in Rust.
-The repository can be found in the <a href="https://github.com/jerry73204/typ">link</a>.</p>
-</td>
-</tr>
-<tr>
-<td class="hdlist1">
-par-stream (2020)
-</td>
-<td class="hdlist2">
-<p>A side project to develop building blocks of asynchronous parallel stream for Rust.
-It provides high-level stream types with parallelism and asynchronous programming in mind.
-The repository can be found in the <a href="https://github.com/jerry73204/par-stream">link</a>.</p>
-</td>
-</tr>
-</table>
+</dd>
+</dl>
+</div>
+<div id="undergraduate-thesis" class="dlist">
+<dl>
+<dt class="hdlist1">(2016) Undergraduate thesis: <em>Solving graph domination problem on DH graph using split decomposition</em></dt>
+<dd>
+<p>The study focuses on total and paired domination problems on distance-hereditary graph. Discovered an alternative optimal solution to total domination based on split decomposition. The handout can be found in the <a href="https://drive.google.com/file/d/18H1fvSZ7td3vArSJaeoTKkLjJ-DqApaP/view?usp=sharing">link</a>.</p>
+</dd>
+</dl>
+</div>
+<div id="master-thesis" class="dlist">
+<dl>
+<dt class="hdlist1">(2021) Master thesis: <em>Occlusion resistant tracking based on idempotent adjunction relationship between cyber and physical objects</em></dt>
+<dd>
+<p>The thesis combines deep learning and formal methods to tackle the occlusion in image tracking-by-detection problem. It developed a method to establish strong relationship among sensor data and learned representations, and achived short-term prediction of vehicle movements based on the material derivative method. The model is trained on completely labeled data is evaluated on partially occluded data. It shows 0.3 meter displacement error in average.</p>
+</dd>
+</dl>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_honors_awards">Honors &amp; Awards</h3>
+</div>
+<div class="sect1">
+<h2 id="_participated_projects">Participated Projects</h2>
+<div class="sectionbody">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">MIT AppInventor project (2016 - 2018)</dt>
+<dd>
+<p>Develope robotic features on WYSIWYG Android programming. Developed Lego EV3 and MediaTek MT7697 support <a href="#ai2-contrib">[ai2-contrib]</a>.</p>
+</dd>
+</dl>
+</div>
+<div id="torfs" class="dlist">
+<dl>
+<dt class="hdlist1">TorFS (2019)</dt>
+<dd>
+<p>The project exploited free storage by abusing Tor&#8217;s Onion service. It provided a virtual file system that stored data blocks as RSA public keys in disguise, and distributed them to the rest of Onoin network. (<a href="https://github.com/jerry73204/cns-final-tor-store">github</a>)</p>
+</dd>
+<dt class="hdlist1">Hacky Arm (2020)</dt>
+<dd>
+<p>It designed a robotic arm capable of grabbing objects using RealSense. The software combined computer vision and position estimation of objects using Intel RealSense depth camera, and instructed the arm to grab objects accordingly. (<a href="https://github.com/jerry73204/hacky-arm">github</a>)</p>
+</dd>
+<dt class="hdlist1">typ (2020)</dt>
+<dd>
+<p>The project developed the type level programming language for Rust. It achieved compile-time, type-level arithmetic computations. It was developed to pave the way for building type-safe tensor types in Rust. (<a href="https://github.com/jerry73204/typ">github</a>)</p>
+</dd>
+<dt class="hdlist1">par-stream (2020)</dt>
+<dd>
+<p>It developed building blocks for asynchronous parallel data flow for Rust. It was develped to serve image data processing that mix heavy I/O and computation tasks. It provided iterator-style stream combinators to distribute data and scale on workers, and is designed to support Rust&#8217;s async/await in nature. (<a href="https://github.com/jerry73204/par-stream">github</a>)</p>
+</dd>
+<dt class="hdlist1">yolo-dl (2020-ongoing)</dt>
+<dd>
+<p>The project reproduced YOLOv4 object detection model using <a href="https://github.com/LaurentMazare/tch-rs">tch-rs</a> and <a href="https://pytorch.org/cppdocs/installing.html">libtorch</a> in Rust. It was designed with parallel, asynchronous and unordered data flow in mind, provided multi-GPU training, and supports modular deep learning model configurations. (<a href="https://github.com/jerry73204/yolo-dl">github</a>)</p>
+</dd>
+<dt class="hdlist1">Wayside (2019-ongoing)</dt>
+<dd>
+<p>The lab project develops a complete data processing system for traffic scenes. The tasks convered data collection, equipment design, data processing pipeline and data analysis. The vision is to provide a data processing pipeline to generate high precision data from LiDAR to aid the performance of camera based models. The project information can be found in the <a href="https://newslabntu.github.io/DanielFolio/projects/3_project/">lab page</a>.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_honors_awards">Honors &amp; Awards</h2>
+<div class="sectionbody">
 <hr>
 <div class="hdlist">
 <table>
@@ -633,6 +642,64 @@ The repository can be found in the <a href="https://github.com/jerry73204/par-st
 </td>
 </tr>
 </table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_skills">Skills</h2>
+<div class="sectionbody">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Experienced in parallel and concurrent systems</dt>
+<dd>
+<p>Can write CUDA (<a href="https://github.com/jerry73204/yolo-dl/blob/master/tch-nms/csrc/nms_cuda.cu">example</a>), is able to construct concurrent data strucutres from scratch. (<a href="https://gist.github.com/jerry73204/ef83fe875df810f123287a5a67b1a0d1">example</a>)</p>
+</dd>
+<dt class="hdlist1">Experienced in machine learning</dt>
+<dd>
+<p>Can design and deploy machine learning models, e.g. SVM (<a href="https://github.com/jerry73204/svm.rs">link</a>), image generation models (<a href="https://github.com/jerry73204/frame-flow/blob/master/src/model/generator.rs">link</a>), contribute to several machine learning and computer vision libraries, e.g. TensorFlow&#8217;s Record File for Rust. (<a href="https://github.com/jerry73204/rust-tfrecord">link</a>)</p>
+</dd>
+<dt class="hdlist1">Experienced in secure systems</dt>
+<dd>
+<p>Participated in several Capture the Flag (CTF) contests in college. Can exploit weakness of a system. (<a href="#torfs">[torfs]</a>)</p>
+</dd>
+<dt class="hdlist1">Mathematical background</dt>
+<dd>
+<p>Studied game theory, combinatorics, abstract algebra, cryptography, computational logic and discrete differential geometry in college. Had an undergraduate thesis on graph theory (<a href="#undergraduate-thesis">[undergraduate-thesis]</a>).</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_research_interests">Research Interests</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The first class of my reserach is to establish learned data representation with formally verifiable properties. In the recent thesis <em>Occlusion resistant tracking based on idempotent adjunction relationship between cyber and physical objects</em> <a href="#master-thesis">[master-thesis]</a>, it provides a framework to guarantee strong equivalence from learned representation and sensor data, which relationship is inspired from category theory, and describe object motions using a concept from fluid dynamics. The future work is to characterize the scene objects in more constructive manner, maybe using developed methods from differential geometry, and combine it with modern machine learning constructs.</p>
+</div>
+<div class="paragraph">
+<p>Another research interest is developing distributed decisions on unreliable systems. The recent project with ADLINK developed distributed decision on vehicles, that aims to be efficient and support dynamic memberships. In the project, we provided a decision model based upon CRDT <a href="#crdt">[crdt]</a> with consistency guarantees, and implemented a baseline consensus algorithm based on BFT.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_references">References</h2>
+<div class="sectionbody">
+<div class="ulist bibliography">
+<ul class="bibliography">
+<li>
+<p><a id="ai2"></a>[ai2] <a href="https://appinventor.mit.edu/">AppInventor</a> project provides WYSIWYG interface for Android programming.</p>
+</li>
+<li>
+<p><a id="lejos"></a>[lejos] <a href="https://lejos.sourceforge.io/">leJOS</a> is a Java framework to run Java bytecode on LEGO Mindstorms rotobics kit.</p>
+</li>
+<li>
+<p><a id="ai2-contrib"></a>[ai2-contrib] The pull requests <a href="https://github.com/mit-cml/appinventor-sources/pull/729">link1</a> and <a href="https://github.com/mit-cml/appinventor-extensions/pull/12">link2</a> that add LEGO EV3 and MT7697 support to AppInventor.</p>
+</li>
+<li>
+<p><a id="crdt"></a>[crdt]: Conflict-free Replicated Data Type, <a href="https://crdt.tech/" class="bare">https://crdt.tech/</a></p>
+</li>
+</ul>
+</div>
 </div>
 </div>
 </div>

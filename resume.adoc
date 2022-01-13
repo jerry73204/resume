@@ -3,75 +3,111 @@
 :iconsdir: ./icons
 :nofooter:
 
-Hsiang-Jui Lin:: email: mailto:jerry73204@gmail.com[jerry73204@gmail.com] +
-image:GitHub-Mark-64px.png[20,20] : link:https://github.com/jerry73204[github.com/jerry73204] +
 
-[#academic-record]
-=== Academic Record
+= Hsiang-Jui (Jerry) Lin
+
 '''
 [horizontal]
-2012-2016:: _National Taiwan University, Bachelor of Computer Science and Information Engineering_
+email:: mailto:jerry73204@gmail.com[jerry73204@gmail.com] +
+github:: link:https://github.com/jerry73204[github.com/jerry73204] +
+
+
+[#academic-record]
+== Academic Record
+'''
+[horizontal]
+2012-2016:: _National Taiwan University, Bachelor of Computer Science and Information Engineering_ +
+Undergraduate thesis: _Solving graph domination problem on DH graph using split decomposition_
 2017-2021:: _National Taiwan University, Master of Computer Science and Information Engineering_ +
-Tasks:  _System Programming_ course TA (2016-2017)
+Teaching assistant of _System Programming_ course  (2016-2017)
+2021-:: _National Taiwan University, Doctor of Computer Science and Information Engineering_ (ongiong)
 
 [#work-experience]
-=== Work Experience
+== Work Experience
 '''
 [horizontal]
-2010 - 2016:: **Software Developer at CAVEDU教育團隊** +
-Tasks: AppInventor project, Author of LeJOS tutorial book
+2010 - 2016:: **Software Developer at CAVEDU Education (CAVEDU 教育團隊)** +
+Developer of AppInventor project <<ai2>>, Authored LeJOS on LEGO NXT book (<<lejos-book>>).
 
-2016 Jul. - 2017 Jul.:: **Substitute Military Service at 臺灣盲人重建院** +
-Tasks: General affairs, develop automatic official documents image to text
+2016 Jul. - 2017 Jul.:: **Substitute Military Service at Institute for the Blind of Taiwan (臺灣盲人重建院)** +
+General affairs, develop automatic official documents image to text
 
 2018 Jun. - 2019 Jun.:: **R&D Assistant at Microsoft Taiwan** +
-Tasks: Bing's Reverse Geocoder backend development
+Bing's Reverse Geocoder backend development
 
-2021 Sep. - 2021 Sep.:: **R&D Assistant at ADLINK Technology Inc.** +
-Tasks: Develop distributed decision using Zenoh
+2021 Sep. - 2022 Sep.:: **R&D Assistant at ADLINK Technology Inc.** +
+Develop distributed consensus and traffic control using Zenoh
 
+[#projects-and-publications]
+== Publications
 
-[#academic-record]
-=== Projects and Publications
-
-'''
-[horizontal]
-Author of _機器人程式設計與實作：使用 Java_ book (2013):: A book introduces link:http://www.lejos.org/[leJOS] framework on LEGO NXT robots. +
+[#lejos-book]
+(2013) _機器人程式設計與實作：使用 Java_ / _Robotic Programming Design and Practices: Using Java_:: A book introduces leJOS framework on LEGO NXT robots <<lejos>>. +
 ISBN: link:http://isbn.ncl.edu.tw/NCL_ISBNNet/main_DisplayRecord.php?PHPSESSID=c8kchinqo5ncq873i47c4sqkb0&Pact=Display&Pstart=1[9789862768228]
 
-MIT AppInventor project (2016 - 2018):: Task: Focus on robotic related features WYSIWYG Android programming +
-Developed Lego EV3 (link:https://github.com/mit-cml/appinventor-sources/pull/729[link]) and MediaTek MT7697 link:https://github.com/mit-cml/appinventor-extensions/pull/12[link] features.
+[#undergraduate-thesis]
+(2016) Undergraduate thesis: _Solving graph domination problem on DH graph using split decomposition_:: The study focuses on total and paired domination problems on distance-hereditary graph. Discovered an alternative optimal solution to total domination based on split decomposition. The handout can be found in the link:https://drive.google.com/file/d/18H1fvSZ7td3vArSJaeoTKkLjJ-DqApaP/view?usp=sharing[link].
 
-Undergraduate study on graph theory (2016):: The study focuses on total and paired domination problems on distance-hereditary graph. +
-Discovered an alternative optimal solution to total domination based on split decomposition.
-The handout can be found in the link:https://drive.google.com/file/d/18H1fvSZ7td3vArSJaeoTKkLjJ-DqApaP/view?usp=sharing[link].
+[#master-thesis]
+(2021) Master thesis: _Occlusion resistant tracking based on idempotent adjunction relationship between cyber and physical objects_::
+The thesis combines deep learning and formal methods to tackle the occlusion in image tracking-by-detection problem. It developed a method to establish strong relationship among sensor data and learned representations, and achived short-term prediction of vehicle movements based on the material derivative method. The model is trained on completely labeled data is evaluated on partially occluded data. It shows 0.3 meter displacement error in average.
 
-TorFS (2019):: It's a side project that exploits free storage from Tor's Onion service. +
- We successfully built a virtual file system that stores data blocks into RSA public keys, and distributed them to the rest of Onoin network. +
-The repository can be found in the link:https://github.com/jerry73204/cns-final-tor-store[link].
+== Participated Projects
 
-Hacky Arm (2020):: A side project to design a robotic arm capable of grabbing objects using RealSense.
-It combines computer vision and position estimation of objects using Intel RealSense depth camera, and instructs the arm to grab objects accordingly. +
-The repository can be found in the link:https://github.com/jerry73204/hacky-arm[link].
-
-Wayside (2019-2021):: The lab project develops a complete data processing system for Taiwanese traffic scenes.
-The tasks conver the data collection, sensor hardware design, data format design and pipelining and data analysis.
-It aims to combine the data from cameras and LiDARs, and develop fusing algorithms to get the best of the both sensors. +
-The reference information can be found in the link:https://newslabntu.github.io/DanielFolio/projects/3_project/[page].
-
-typ (2020):: A side project to develop the type level programming language for Rust. +
-It achieves compile-time, type-level arithmetic computations. It was developed to pave the way
-for building type-safe tensor types in Rust.
-The repository can be found in the link:https://github.com/jerry73204/typ[link].
-
-par-stream (2020):: A side project to develop building blocks of asynchronous parallel stream for Rust.
-It provides high-level stream types with parallelism and asynchronous programming in mind.
-The repository can be found in the link:https://github.com/jerry73204/par-stream[link].
+MIT AppInventor project (2016 - 2018)::
+Develope robotic features on WYSIWYG Android programming. Developed Lego EV3 and MediaTek MT7697 support <<ai2-contrib>>.
 
 
-=== Honors & Awards
+[#torfs]
+TorFS (2019)::
+ The project exploited free storage by abusing Tor's Onion service. It provided a virtual file system that stored data blocks as RSA public keys in disguise, and distributed them to the rest of Onoin network. (link:https://github.com/jerry73204/cns-final-tor-store[github])
 
+Hacky Arm (2020)::
+It designed a robotic arm capable of grabbing objects using RealSense. The software combined computer vision and position estimation of objects using Intel RealSense depth camera, and instructed the arm to grab objects accordingly. (link:https://github.com/jerry73204/hacky-arm[github])
+
+typ (2020)::
+The project developed the type level programming language for Rust. It achieved compile-time, type-level arithmetic computations. It was developed to pave the way for building type-safe tensor types in Rust. (link:https://github.com/jerry73204/typ[github])
+
+par-stream (2020)::
+It developed building blocks for asynchronous parallel data flow for Rust. It was develped to serve image data processing that mix heavy I/O and computation tasks. It provided iterator-style stream combinators to distribute data and scale on workers, and is designed to support Rust's async/await in nature. (link:https://github.com/jerry73204/par-stream[github])
+
+yolo-dl (2020-ongoing)::
+The project reproduced YOLOv4 object detection model using link:https://github.com/LaurentMazare/tch-rs[tch-rs] and link:https://pytorch.org/cppdocs/installing.html[libtorch] in Rust. It was designed with parallel, asynchronous and unordered data flow in mind, provided multi-GPU training, and supports modular deep learning model configurations. (link:https://github.com/jerry73204/yolo-dl[github])
+
+Wayside (2019-ongoing)::
+The lab project develops a complete data processing system for traffic scenes. The tasks convered data collection, equipment design, data processing pipeline and data analysis. The vision is to provide a data processing pipeline to generate high precision data from LiDAR to aid the performance of camera based models. The project information can be found in the link:https://newslabntu.github.io/DanielFolio/projects/3_project/[lab page].
+
+== Honors & Awards
 '''
 [horizontal]
 104 年金盾獎 2nd place (2015):: Reference link:https://www.nicst.ey.gov.tw/News_Content4.aspx?n=11EC3BA2351F93AA&sms=4D833E26864BB926&s=60F37FB45AC653BD[行政院國家資通安全會報]
 102 年金盾獎 潛力無窮獎 (2013) :: Reference link:https://web.archive.org/web/20140321005458/http://security.cisanet.org.tw:80/?i=3&mc=302[Web archive for official site]
+
+== Skills
+
+Experienced in parallel and concurrent systems::
+Can write CUDA (link:https://github.com/jerry73204/yolo-dl/blob/master/tch-nms/csrc/nms_cuda.cu[example]), is able to construct concurrent data strucutres from scratch. (link:https://gist.github.com/jerry73204/ef83fe875df810f123287a5a67b1a0d1[example])
+
+Experienced in machine learning::
+Can design and deploy machine learning models, e.g. SVM (link:https://github.com/jerry73204/svm.rs[link]), image generation models (link:https://github.com/jerry73204/frame-flow/blob/master/src/model/generator.rs[link]), contribute to several machine learning and computer vision libraries, e.g. TensorFlow's Record File for Rust. (link:https://github.com/jerry73204/rust-tfrecord[link])
+
+Experienced in secure systems::
+Participated in several Capture the Flag (CTF) contests in college. Can exploit weakness of a system. (<<torfs>>)
+
+Mathematical background::
+Studied game theory, combinatorics, abstract algebra, cryptography, computational logic and discrete differential geometry in college. Had an undergraduate thesis on graph theory (<<undergraduate-thesis>>).
+
+== Research Interests
+
+The first class of my reserach is to establish learned data representation with formally verifiable properties. In the recent thesis _Occlusion resistant tracking based on idempotent adjunction relationship between cyber and physical objects_ <<master-thesis>>, it provides a framework to guarantee strong equivalence from learned representation and sensor data, which relationship is inspired from category theory, and describe object motions using a concept from fluid dynamics. The future work is to characterize the scene objects in more constructive manner, maybe using developed methods from differential geometry, and combine it with modern machine learning constructs.
+
+Another research interest is developing distributed decisions on unreliable systems. The recent project with ADLINK developed distributed decision on vehicles, that aims to be efficient and support dynamic memberships. In the project, we provided a decision model based upon CRDT <<crdt>> with consistency guarantees, and implemented a baseline consensus algorithm based on BFT.
+
+[bibliography]
+== References
+
+- [[[ai2]]] link:https://appinventor.mit.edu/[AppInventor] project provides WYSIWYG interface for Android programming.
+- [[[lejos]]] link:https://lejos.sourceforge.io/[leJOS] is a Java framework to run Java bytecode on LEGO Mindstorms rotobics kit.
+- [[[ai2-contrib]]] The pull requests link:https://github.com/mit-cml/appinventor-sources/pull/729[link1] and link:https://github.com/mit-cml/appinventor-extensions/pull/12[link2] that add LEGO EV3 and MT7697 support to AppInventor.
+
+- [[[crdt]]]: Conflict-free Replicated Data Type, https://crdt.tech/
