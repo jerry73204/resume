@@ -441,31 +441,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h1>Hsiang-Jui (Jerry) Lin</h1>
 </div>
 <div id="content">
-<div id="preamble">
-<div class="sectionbody">
-<hr>
-<div class="hdlist">
-<table>
-<tr>
-<td class="hdlist1">
-email
-</td>
-<td class="hdlist2">
-<p><a href="mailto:jerry73204@gmail.com">jerry73204@gmail.com</a><br></p>
-</td>
-</tr>
-<tr>
-<td class="hdlist1">
-github
-</td>
-<td class="hdlist2">
-<p><a href="https://github.com/jerry73204">github.com/jerry73204</a><br></p>
-</td>
-</tr>
-</table>
-</div>
-</div>
-</div>
 <div class="sect1">
 <h2 id="academic-record">Academic Record</h2>
 <div class="sectionbody">
@@ -487,7 +462,7 @@ Undergraduate thesis: <em>Solving graph domination problem on DH graph using spl
 </td>
 <td class="hdlist2">
 <p><em>National Taiwan University, Master of Computer Science and Information Engineering</em><br>
-Teaching assistant of <em>System Programming</em> course  (2016-2017)</p>
+Teaching assistant of <em>System Programming</em> course (2016-2017)</p>
 </td>
 </tr>
 <tr>
@@ -495,7 +470,7 @@ Teaching assistant of <em>System Programming</em> course  (2016-2017)</p>
 2021-
 </td>
 <td class="hdlist2">
-<p><em>National Taiwan University, Doctor of Computer Science and Information Engineering</em> (ongiong)</p>
+<p><em>National Taiwan University, Doctor of Computer Science and Information Engineering</em></p>
 </td>
 </tr>
 </table>
@@ -514,16 +489,7 @@ Teaching assistant of <em>System Programming</em> course  (2016-2017)</p>
 </td>
 <td class="hdlist2">
 <p><strong>Software Developer at CAVEDU Education (CAVEDU 教育團隊)</strong><br>
-Developer of AppInventor project <a href="#ai2">[ai2]</a>, Authored LeJOS on LEGO NXT book (<a href="#lejos-book">[lejos-book]</a>).</p>
-</td>
-</tr>
-<tr>
-<td class="hdlist1">
-2016 Jul. - 2017 Jul.
-</td>
-<td class="hdlist2">
-<p><strong>Substitute Military Service at Institute for the Blind of Taiwan (臺灣盲人重建院)</strong><br>
-General affairs, develop automatic official documents image to text</p>
+Developer of AppInventor project, Authored LeJOS on LEGO NXT book.</p>
 </td>
 </tr>
 <tr>
@@ -555,7 +521,7 @@ Develop distributed consensus and traffic control using Zenoh</p>
 <dl>
 <dt class="hdlist1">(2013) <em>機器人程式設計與實作：使用 Java</em> / <em>Robotic Programming Design and Practices: Using Java</em></dt>
 <dd>
-<p>A book introduces leJOS framework on LEGO NXT robots <a href="#lejos">[lejos]</a>.<br>
+<p>A book introduces leJOS framework on LEGO NXT robots.<br>
 ISBN: <a href="http://isbn.ncl.edu.tw/NCL_ISBNNet/main_DisplayRecord.php?PHPSESSID=c8kchinqo5ncq873i47c4sqkb0&amp;Pact=Display&amp;Pstart=1">9789862768228</a></p>
 </dd>
 </dl>
@@ -572,7 +538,15 @@ ISBN: <a href="http://isbn.ncl.edu.tw/NCL_ISBNNet/main_DisplayRecord.php?PHPSESS
 <dl>
 <dt class="hdlist1">(2021) Master thesis: <em>Occlusion resistant tracking based on idempotent adjunction relationship between cyber and physical objects</em></dt>
 <dd>
-<p>The thesis combines deep learning and formal methods to tackle the occlusion in image tracking-by-detection problem. It developed a method to establish strong relationship among sensor data and learned representations, and achived short-term prediction of vehicle movements based on the material derivative method. The model is trained on completely labeled data is evaluated on partially occluded data. It shows 0.3 meter displacement error in average.</p>
+<p>This work combines deep learning and formal methods to tackle the occlusion in image tracking-by-detection problem. It developed a method to establish strong relationship among sensor data and learned representations, and achived short-term prediction of vehicle movements based on the material derivative method. The model is trained on completely labeled data is evaluated on partially occluded data. It shows 0.3 meter displacement error in average.</p>
+</dd>
+</dl>
+</div>
+<div id="rtsca22" class="dlist">
+<dl>
+<dt class="hdlist1">(RTSCA 2022) <em>Scalable and Bounded-time Decisions on Edge Device Network using Eclipse Zenoh</em></dt>
+<dd>
+<p>This work developed an collaborate decision algorithm based on the <em>cheap consensus</em> concept. By stacking CRDT, Reliable Broadcast and the data exchange framework <em>Zenoh</em> together, the method was able to achieve consistenct decision among several peers within a bounded period of time. It also evaluated the performance on Zenoh and CycloneDDS.</p>
 </dd>
 </dl>
 </div>
@@ -581,90 +555,19 @@ ISBN: <a href="http://isbn.ncl.edu.tw/NCL_ISBNNet/main_DisplayRecord.php?PHPSESS
 <div class="sect1">
 <h2 id="_participated_projects">Participated Projects</h2>
 <div class="sectionbody">
-<div class="dlist">
-<dl>
-<dt class="hdlist1">MIT AppInventor project (2016 - 2018)</dt>
-<dd>
-<p>Develope robotic features on WYSIWYG Android programming. Developed Lego EV3 and MediaTek MT7697 support <a href="#ai2-contrib">[ai2-contrib]</a>.</p>
-</dd>
-</dl>
-</div>
 <div id="torfs" class="dlist">
 <dl>
 <dt class="hdlist1">TorFS (2019)</dt>
 <dd>
 <p>The project exploited free storage by abusing Tor&#8217;s Onion service. It provided a virtual file system that stored data blocks as RSA public keys in disguise, and distributed them to the rest of Onoin network. (<a href="https://github.com/jerry73204/cns-final-tor-store">github</a>)</p>
 </dd>
-<dt class="hdlist1">Hacky Arm (2020)</dt>
-<dd>
-<p>It designed a robotic arm capable of grabbing objects using RealSense. The software combined computer vision and position estimation of objects using Intel RealSense depth camera, and instructed the arm to grab objects accordingly. (<a href="https://github.com/jerry73204/hacky-arm">github</a>)</p>
-</dd>
-<dt class="hdlist1">typ (2020)</dt>
-<dd>
-<p>The project developed the type level programming language for Rust. It achieved compile-time, type-level arithmetic computations. It was developed to pave the way for building type-safe tensor types in Rust. (<a href="https://github.com/jerry73204/typ">github</a>)</p>
-</dd>
 <dt class="hdlist1">par-stream (2020)</dt>
 <dd>
 <p>It developed building blocks for asynchronous parallel data flow for Rust. It was develped to serve image data processing that mix heavy I/O and computation tasks. It provided iterator-style stream combinators to distribute data and scale on workers, and is designed to support Rust&#8217;s async/await in nature. (<a href="https://github.com/jerry73204/par-stream">github</a>)</p>
 </dd>
-<dt class="hdlist1">yolo-dl (2020-ongoing)</dt>
-<dd>
-<p>The project reproduced YOLOv4 object detection model using <a href="https://github.com/LaurentMazare/tch-rs">tch-rs</a> and <a href="https://pytorch.org/cppdocs/installing.html">libtorch</a> in Rust. It was designed with parallel, asynchronous and unordered data flow in mind, provided multi-GPU training, and supports modular deep learning model configurations. (<a href="https://github.com/jerry73204/yolo-dl">github</a>)</p>
-</dd>
-<dt class="hdlist1">Wayside (2019-ongoing)</dt>
+<dt class="hdlist1">NEWSLAB Autonomous Vehicle Group (2019-)</dt>
 <dd>
 <p>The lab project develops a complete data processing system for traffic scenes. The tasks convered data collection, equipment design, data processing pipeline and data analysis. The vision is to provide a data processing pipeline to generate high precision data from LiDAR to aid the performance of camera based models. The project information can be found in the <a href="https://newslabntu.github.io/DanielFolio/projects/3_project/">lab page</a>.</p>
-</dd>
-</dl>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_honors_awards">Honors &amp; Awards</h2>
-<div class="sectionbody">
-<hr>
-<div class="hdlist">
-<table>
-<tr>
-<td class="hdlist1">
-104 年金盾獎 2nd place (2015)
-</td>
-<td class="hdlist2">
-<p>Reference <a href="https://www.nicst.ey.gov.tw/News_Content4.aspx?n=11EC3BA2351F93AA&amp;sms=4D833E26864BB926&amp;s=60F37FB45AC653BD">行政院國家資通安全會報</a></p>
-</td>
-</tr>
-<tr>
-<td class="hdlist1">
-102 年金盾獎 潛力無窮獎 (2013) 
-</td>
-<td class="hdlist2">
-<p>Reference <a href="https://web.archive.org/web/20140321005458/http://security.cisanet.org.tw:80/?i=3&amp;mc=302">Web archive for official site</a></p>
-</td>
-</tr>
-</table>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_skills">Skills</h2>
-<div class="sectionbody">
-<div class="dlist">
-<dl>
-<dt class="hdlist1">Experienced in parallel and concurrent systems</dt>
-<dd>
-<p>Can write CUDA (<a href="https://github.com/jerry73204/yolo-dl/blob/master/tch-nms/csrc/nms_cuda.cu">example</a>), is able to construct concurrent data strucutres from scratch. (<a href="https://gist.github.com/jerry73204/ef83fe875df810f123287a5a67b1a0d1">example</a>)</p>
-</dd>
-<dt class="hdlist1">Experienced in machine learning</dt>
-<dd>
-<p>Can design and deploy machine learning models, e.g. SVM (<a href="https://github.com/jerry73204/svm.rs">link</a>), image generation models (<a href="https://github.com/jerry73204/frame-flow/blob/master/src/model/generator.rs">link</a>), contribute to several machine learning and computer vision libraries, e.g. TensorFlow&#8217;s Record File for Rust. (<a href="https://github.com/jerry73204/rust-tfrecord">link</a>)</p>
-</dd>
-<dt class="hdlist1">Experienced in secure systems</dt>
-<dd>
-<p>Participated in several Capture the Flag (CTF) contests in college. Can exploit weakness of a system. (<a href="#torfs">[torfs]</a>)</p>
-</dd>
-<dt class="hdlist1">Mathematical background</dt>
-<dd>
-<p>Studied game theory, combinatorics, abstract algebra, cryptography, computational logic and discrete differential geometry in college. Had an undergraduate thesis on graph theory (<a href="#undergraduate-thesis">[undergraduate-thesis]</a>).</p>
 </dd>
 </dl>
 </div>
@@ -674,31 +577,10 @@ ISBN: <a href="http://isbn.ncl.edu.tw/NCL_ISBNNet/main_DisplayRecord.php?PHPSESS
 <h2 id="_research_interests">Research Interests</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The first class of my reserach is to establish learned data representation with formally verifiable properties. In the recent thesis <em>Occlusion resistant tracking based on idempotent adjunction relationship between cyber and physical objects</em> <a href="#master-thesis">[master-thesis]</a>, it provides a framework to guarantee strong equivalence from learned representation and sensor data, which relationship is inspired from category theory, and describe object motions using a concept from fluid dynamics. The future work is to characterize the scene objects in more constructive manner, maybe using developed methods from differential geometry, and combine it with modern machine learning constructs.</p>
+<p>One recent reserach is to establish verifiable properties on learend scene detection. In the recent thesis <em>Occlusion resistant tracking based on idempotent adjunction relationship between cyber and physical objects</em>, it provides a framework to guarantee strong equivalence from detection and raw sensor data, which idea was inspired from category theory. The future work is to characterize the scene objects in more constructive manner, maybe using developed methods from differential geometry, and combine it with modern machine learning constructs.</p>
 </div>
 <div class="paragraph">
-<p>Another research interest is developing distributed decisions on unreliable systems. The recent project with ADLINK developed distributed decision on vehicles, that aims to be efficient and support dynamic memberships. In the project, we provided a decision model based upon CRDT <a href="#crdt">[crdt]</a> with consistency guarantees, and implemented a baseline consensus algorithm based on BFT.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_references">References</h2>
-<div class="sectionbody">
-<div class="ulist bibliography">
-<ul class="bibliography">
-<li>
-<p><a id="ai2"></a>[ai2] <a href="https://appinventor.mit.edu/">AppInventor</a> project provides WYSIWYG interface for Android programming.</p>
-</li>
-<li>
-<p><a id="lejos"></a>[lejos] <a href="https://lejos.sourceforge.io/">leJOS</a> is a Java framework to run Java bytecode on LEGO Mindstorms rotobics kit.</p>
-</li>
-<li>
-<p><a id="ai2-contrib"></a>[ai2-contrib] The pull requests <a href="https://github.com/mit-cml/appinventor-sources/pull/729">link1</a> and <a href="https://github.com/mit-cml/appinventor-extensions/pull/12">link2</a> that add LEGO EV3 and MT7697 support to AppInventor.</p>
-</li>
-<li>
-<p><a id="crdt"></a>[crdt]: Conflict-free Replicated Data Type, <a href="https://crdt.tech/" class="bare">https://crdt.tech/</a></p>
-</li>
-</ul>
+<p>Another research interest is developing distributed decisions on unreliable systems. The recent project with ADLINK Inc. developed distributed decision on vehicles, that aims to be efficient and support dynamic memberships. In the project, we provided a decision model based upon CRDT with consistency guarantees, and implemented a baseline consensus algorithm based on BFT.</p>
 </div>
 </div>
 </div>
