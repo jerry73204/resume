@@ -7,7 +7,7 @@
 = Hsiang-Jui (Jerry) Lin
 
 [#academic-record]
-== Academic Record
+=== Academic Record
 '''
 [horizontal]
 2012-2016:: _National Taiwan University, Bachelor of Computer Science and Information Engineering_ +
@@ -17,7 +17,7 @@ Teaching assistant of _System Programming_ course (2016-2017)
 2021-:: _National Taiwan University, Doctor of Computer Science and Information Engineering_
 
 [#work-experience]
-== Work Experience
+=== Work Experience
 '''
 [horizontal]
 2010 - 2016:: **Software Developer at CAVEDU Education (CAVEDU 教育團隊)** +
@@ -30,7 +30,7 @@ Bing's Reverse Geocoder backend development
 Develop distributed consensus and traffic control using Zenoh
 
 [#projects-and-publications]
-== Publications
+=== Publications
 
 [#lejos-book]
 (2013) _機器人程式設計與實作：使用 Java_ / _Robotic Programming Design and Practices: Using Java_:: A book introduces leJOS framework on LEGO NXT robots. +
@@ -47,7 +47,7 @@ This work combines deep learning and formal methods to tackle the occlusion in i
 (RTSCA 2022) _Scalable and Bounded-time Decisions on Edge Device Network using Eclipse Zenoh_::
 This work developed an collaborate decision algorithm based on the _cheap consensus_ concept. By stacking CRDT, Reliable Broadcast and the data exchange framework _Zenoh_ together, the method was able to achieve consistenct decision among several peers within a bounded period of time. It also evaluated the performance on Zenoh and CycloneDDS.
 
-== Participated Projects
+=== Participated Projects
 
 [#torfs]
 TorFS (2019)::
@@ -59,7 +59,7 @@ It developed building blocks for asynchronous parallel data flow for Rust. It wa
 NEWSLAB Autonomous Vehicle Group (2019-)::
 The lab project develops a complete data processing system for traffic scenes. The tasks convered data collection, equipment design, data processing pipeline and data analysis. The vision is to provide a data processing pipeline to generate high precision data from LiDAR to aid the performance of camera based models. The project information can be found in the link:https://newslabntu.github.io/DanielFolio/projects/3_project/[lab page].
 
-== Research Interests
+=== Research Interests
 
 One recent reserach is to establish verifiable properties on learend scene detection. In the recent thesis _Occlusion resistant tracking based on idempotent adjunction relationship between cyber and physical objects_, it provides a framework to guarantee strong equivalence from detection and raw sensor data, which idea was inspired from category theory. The future work is to characterize the scene objects in more constructive manner, maybe using developed methods from differential geometry, and combine it with modern machine learning constructs.
 
