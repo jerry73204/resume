@@ -3,18 +3,23 @@
 :iconsdir: ./icons
 :nofooter:
 
-
 = Hsiang-Jui (Jerry) Lin
 
 [#academic-record]
 === Academic Record
 '''
 [horizontal]
-2012-2016:: _National Taiwan University, Bachelor of Computer Science and Information Engineering_ +
-Undergraduate thesis: _Solving graph domination problem on DH graph using split decomposition_
-2017-2021:: _National Taiwan University, Master of Computer Science and Information Engineering_ +
-Teaching assistant of _System Programming_ course (2016-2017)
-2021-:: _National Taiwan University, Doctor of Computer Science and Information Engineering_
+2016:: _National Taiwan University, Bachelor of Computer Science and
+Information Engineering_ + Undergraduate thesis: _Solving graph
+domination problem on DH graph using split decomposition_
+
+2021:: _National Taiwan University, Master of Computer Science and
+Information Engineering_
+
+2021:: _National Taiwan University, PhD program in Computer Science
+and Information Engineering_ under the supervision of Professor
+Chi-Sheng Shih. The research focuses on autonomous vehicles,
+multi-modal sensor fusion and vehicle-to-anything communication.
 
 [#work-experience]
 === Work Experience
@@ -26,41 +31,119 @@ Developer of AppInventor project, Authored LeJOS on LEGO NXT book.
 2018 Jun. - 2019 Jun.:: **R&D Assistant at Microsoft Taiwan** +
 Bing's Reverse Geocoder backend development
 
-2021 Sep. - 2022 Sep.:: **R&D Assistant at ADLINK Technology Inc.** +
+2021 Sep. - 2024 May.:: **R&D Assistant at ADLINK Technology Inc.** +
 Develop distributed consensus and traffic control using Zenoh
 
-[#projects-and-publications]
+[#skills]
+=== Skills
+
+Advanced System Programming:: Know C/C++, Rust, CUDA and OpenCL. Can
+implement advanced data structures like
+link:https://github.com/jerry73204/ziptree-rs[ziptree]. Experienced in
+building parallel and concurrent programs.
+
+Machine Learning:: Experienced in PyTorch, TensorFlow and several
+visualization tools. Worked on a deep learning project in my thesis.
+
+Computer Security and Cryptography:: Studied cryptography mathematics
+and practical computer security lessons during college, and was ranked
+#2 as a hacker in National 金盾獎 competition..
+
+Digital Circuits and Robotics:: Ever worked as a Maker promoter in
+CAVEDU and learned 3D printing and circuit design. The <<hacky-arm>>
+project is the work in CAVEDU.
+
+[#publications]
 === Publications
 
 [#lejos-book]
-(2013) _機器人程式設計與實作：使用 Java_ / _Robotic Programming Design and Practices: Using Java_:: A book introduces leJOS framework on LEGO NXT robots. +
-ISBN: link:http://isbn.ncl.edu.tw/NCL_ISBNNet/main_DisplayRecord.php?PHPSESSID=c8kchinqo5ncq873i47c4sqkb0&Pact=Display&Pstart=1[9789862768228]
+(2013) _機器人程式設計與實作：使用 Java_ / _Robotic Programming Design and Practices: Using Java_::
+A book introduces leJOS framework on LEGO NXT robots. + ISBN:
+link:http://isbn.ncl.edu.tw/NCL_ISBNNet/main_DisplayRecord.php?PHPSESSID=c8kchinqo5ncq873i47c4sqkb0&Pact=Display&Pstart=1[9789862768228]
 
 [#undergraduate-thesis]
-(2016) Undergraduate thesis: _Solving graph domination problem on DH graph using split decomposition_:: The study focuses on total and paired domination problems on distance-hereditary graph. Discovered an alternative optimal solution to total domination based on split decomposition. The handout can be found in the link:https://drive.google.com/file/d/18H1fvSZ7td3vArSJaeoTKkLjJ-DqApaP/view?usp=sharing[link].
+(2016) Undergraduate thesis: _Solving graph domination problem on DH graph using split decomposition_::
+The study focuses on total and paired domination problems on
+distance-hereditary graph. Discovered an alternative optimal solution
+to total domination based on split decomposition. The handout can be
+found in the
+link:https://drive.google.com/file/d/18H1fvSZ7td3vArSJaeoTKkLjJ-DqApaP/view?usp=sharing[link].
 
 [#master-thesis]
 (2021) Master thesis: _Occlusion resistant tracking based on idempotent adjunction relationship between cyber and physical objects_::
-This work combines deep learning and formal methods to tackle the occlusion in image tracking-by-detection problem. It developed a method to establish strong relationship among sensor data and learned representations, and achived short-term prediction of vehicle movements based on the material derivative method. The model is trained on completely labeled data is evaluated on partially occluded data. It shows 0.3 meter displacement error in average.
+This work combines deep learning and formal methods to tackle the
+occlusion in image tracking-by-detection problem. It developed a
+method to establish strong relationship among sensor data and learned
+representations, and achived short-term prediction of vehicle
+movements based on the material derivative method. The model is
+trained on completely labeled data is evaluated on partially occluded
+data. It shows 0.3 meter displacement error in average.
 
 [#rtsca22]
 (RTSCA 2022) _Scalable and Bounded-time Decisions on Edge Device Network using Eclipse Zenoh_::
-This work developed an collaborate decision algorithm based on the _cheap consensus_ concept. By stacking CRDT, Reliable Broadcast and the data exchange framework _Zenoh_ together, the method was able to achieve consistenct decision among several peers within a bounded period of time. It also evaluated the performance on Zenoh and CycloneDDS.
+This work developed an collaborate decision algorithm based on the
+_cheap consensus_ concept. By stacking CRDT, Reliable Broadcast and
+the data exchange framework _Zenoh_ together, the method was able to
+achieve consistenct decision among several peers within a bounded
+period of time. It also evaluated the performance on Zenoh and
+CycloneDDS.
 
-=== Participated Projects
+[#zenoh-comparison]
+(2023) A Performance Study on the Throughput and Latency of Zenoh, MQTT, Kafka, and DDS::
+This work evaluated the performance of popular pub/sub communication
+frameworks in terms of latency and throughput under various scenarios.
+
+[#lectures]
+=== Lectures
+
+(COSCUP 2023) Highly Performant Dataflow in Stream-Oriented Programming in Rust::
+This lecture showed off the par-stream, a demonstration of
+stream-oriented programming in Rust. The proposed framework leveraged
+async/.await syntax to mix I/O-bound and CPU-bound operations written
+in iterator style. It made it simple and straightforward to build an
+efficient data pipeline.
+(link:https://coscup.org/2023/zh-TW/session/JLZM37[COSCUP])
+
+[#open-source]
+=== Open-Source Contributions
+
+The following lists the contribution of my own work.
 
 [#torfs]
-TorFS (2019)::
- The project exploited free storage by abusing Tor's Onion service. It provided a virtual file system that stored data blocks as RSA public keys in disguise, and distributed them to the rest of Onoin network. (link:https://github.com/jerry73204/cns-final-tor-store[github])
+TorFS (2019):: The project exploited free storage by abusing Tor's
+Onion service. It provided a virtual file system that stored data
+blocks as RSA public keys in disguise, and distributed them to the
+rest of Onion
+network. (link:https://github.com/jerry73204/cns-final-tor-store[github])
 
-par-stream (2020)::
-It developed building blocks for asynchronous parallel data flow for Rust. It was develped to serve image data processing that mix heavy I/O and computation tasks. It provided iterator-style stream combinators to distribute data and scale on workers, and is designed to support Rust's async/await in nature. (link:https://github.com/jerry73204/par-stream[github])
+[#hacky-arm]
+hacky-arm (2020):: Build a dirty-cheap robotic arm solution that
+performs object grabbing tasks using computer vision based SLAMs.
+(link:https://github.com/jerry73204/hacky-arm/[github])
 
-NEWSLAB Autonomous Vehicle Group (2019-)::
-The lab project develops a complete data processing system for traffic scenes. The tasks convered data collection, equipment design, data processing pipeline and data analysis. The vision is to provide a data processing pipeline to generate high precision data from LiDAR to aid the performance of camera based models. The project information can be found in the link:https://newslabntu.github.io/DanielFolio/projects/3_project/[lab page].
+[#par-stream]
+par-stream (2020):: It developed building blocks for asynchronous
+parallel data flow for Rust. It was develped to serve image data
+processing that mix heavy I/O and computation tasks. It provided
+iterator-style stream combinators to distribute data and scale on
+workers, and is designed to support Rust's async/await in
+nature. (link:https://github.com/jerry73204/par-stream[github])
 
-=== Research Interests
+[#ddshark]
+ddshark (2023):: Live monitoring tool like htop for RTPS protocol. It is
+compatible with various DDS implementations and was tested with
+Cyclone DDS.  (link:https://github.com/NEWSLabNTU/ddshark[github])
 
-One recent reserach is to establish verifiable properties on learend scene detection. In the recent thesis _Occlusion resistant tracking based on idempotent adjunction relationship between cyber and physical objects_, it provides a framework to guarantee strong equivalence from detection and raw sensor data, which idea was inspired from category theory. The future work is to characterize the scene objects in more constructive manner, maybe using developed methods from differential geometry, and combine it with modern machine learning constructs.
+misc.:: link:https://github.com/jerry73204/carla-rust[carla-rust],
+link:https://github.com/jerry73204/rust-tfrecord[rust-tfrecord],
+link:https://github.com/jerry73204/rust-cv-convert[rust-cv-convert],
+link:https://github.com/jerry73204/fast-yuv442-to-rgb24[fast-yuv442-to-rgb24]
+and more.
 
-Another research interest is developing distributed decisions on unreliable systems. The recent project with ADLINK Inc. developed distributed decision on vehicles, that aims to be efficient and support dynamic memberships. In the project, we provided a decision model based upon CRDT with consistency guarantees, and implemented a baseline consensus algorithm based on BFT.
+The following lists the cooperation works and contributed projects.
+
+[#autoware-carla-launch]
+autoware_carla_launch (2023):: This is an cooperated work with
+ADLINK's evshary, which develops the Zenoh communication interface
+among CARLA simulator and Autoware, one of the most comprehensive
+vehicle driving software.
