@@ -2,19 +2,22 @@
 #+OPTIONS: toc:nil num:nil timestamp:nil author:nil creator:nil validate:nil
 #+LATEX_COMPILER: xelatex
 #+LATEX_CLASS: article
-#+LATEX_CLASS_OPTIONS: [11pt]
+#+LATEX_CLASS_OPTIONS: [10pt]
 #+LATEX_HEADER: \usepackage{fontspec}
 #+LATEX_HEADER: \usepackage{xeCJK}
 #+LATEX_HEADER: \setmainfont{Liberation Serif}
 #+LATEX_HEADER: \setCJKmainfont{Noto Sans CJK TC}
-#+LATEX_HEADER: \usepackage[margin=0.6in]{geometry}
+#+LATEX_HEADER: \usepackage[top=0.5in,bottom=0.5in,left=0.7in,right=0.7in]{geometry}
 #+LATEX_HEADER: \usepackage{hyperref}
 #+LATEX_HEADER: \hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue}
 #+LATEX_HEADER: \pagestyle{empty}
-#+LATEX_HEADER: \setlength{\parskip}{0pt}
+#+LATEX_HEADER: \setlength{\parskip}{1pt}
 #+LATEX_HEADER: \usepackage{titlesec}
-#+LATEX_HEADER: \titlespacing*{\section}{0pt}{8pt}{4pt}
-#+LATEX_HEADER: \titlespacing*{\subsection}{0pt}{6pt}{3pt}
+#+LATEX_HEADER: \titlespacing*{\section}{0pt}{6pt}{3pt}
+#+LATEX_HEADER: \titlespacing*{\subsection}{0pt}{4pt}{2pt}
+#+LATEX_HEADER: \usepackage{enumitem}
+#+LATEX_HEADER: \setlist[itemize]{topsep=0pt,itemsep=1pt,parsep=0pt,partopsep=0pt,leftmargin=15pt}
+#+LATEX_HEADER: \renewcommand{\baselinestretch}{0.95}
 #+HTML_HEAD: <style type="text/css"> body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; } h2 { border-bottom: 2px solid #ccc; padding-bottom: 5px; } dt { font-weight: bold; } dd { margin-bottom: 10px; } .contact-info { text-align: center; margin-bottom: 20px; } .contact-info a { margin: 0 10px; } </style>
 
 #+BEGIN_CENTER
