@@ -2,14 +2,24 @@
 
 all: resume.html resume.pdf
 
-resume.html: resume.adoc
-	asciidoctor -a data-uri -a stem=latexmath -b html resume.adoc
+resume.html: resume.org
+	emacs --batch --eval "(require 'ox-html)" --visit=resume.org --funcall org-html-export-to-html
 
-resume.pdf: resume.html
-	wkhtmltopdf resume.html resume.pdf
+resume.pdf: resume.org
+	emacs --batch --eval "(progn (require 'ox-latex) (setq org-latex-pdf-process '(\"xelatex -interaction nonstopmode -output-directory %o %f\" \"xelatex -interaction nonstopmode -output-directory %o %f\" \"xelatex -interaction nonstopmode -output-directory %o %f\")))" --visit=resume.org --funcall org-latex-export-to-pdf
 
 clean:
 	rm -f resume.html
 	rm -f resume.pdf
-	rm -f *.png
-	rm -f *.svg
+	rm -f resume.tex
+	rm -f resume.log
+	rm -f resume.aux
+	rm -f resume.out
+	rm -f resume.toc
+	rm -f resume.lof
+	rm -f resume.lot
+	rm -f resume.fls
+	rm -f resume.fdb_latexmk
+	rm -f resume.synctex.gz
+	rm -f resume.bbl
+	rm -f resume.blg
