@@ -1,4 +1,4 @@
-.PHONY: all clean
+.PHONY: all clean watch
 
 all: resume.html resume.pdf
 
@@ -23,3 +23,12 @@ clean:
 	rm -f resume.synctex.gz
 	rm -f resume.bbl
 	rm -f resume.blg
+
+watch:
+	@echo "Watching resume.org for changes. Press Ctrl+C to stop."
+	@while true; do \
+		inotifywait -e modify resume.org 2>/dev/null || fswatch -1 resume.org 2>/dev/null; \
+		echo "Detected change in resume.org, rebuilding HTML..."; \
+		make resume.html; \
+		echo "HTML rebuild complete."; \
+	done
