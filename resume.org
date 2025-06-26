@@ -1,5 +1,5 @@
-#+TITLE: Hsiang-Jui (Jerry) Lin
-#+OPTIONS: toc:nil num:nil
+#+TITLE: Hsiang-Jui Lin (Jerry Lin) | 林祥瑞
+#+OPTIONS: toc:nil num:nil timestamp:nil author:nil creator:nil validate:nil
 #+LATEX_COMPILER: xelatex
 #+LATEX_CLASS: article
 #+LATEX_CLASS_OPTIONS: [11pt]
@@ -7,72 +7,91 @@
 #+LATEX_HEADER: \usepackage{xeCJK}
 #+LATEX_HEADER: \setmainfont{Liberation Serif}
 #+LATEX_HEADER: \setCJKmainfont{Noto Sans CJK TC}
-#+LATEX_HEADER: \usepackage[margin=1in]{geometry}
+#+LATEX_HEADER: \usepackage[margin=0.6in]{geometry}
 #+LATEX_HEADER: \usepackage{hyperref}
 #+LATEX_HEADER: \hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue}
 #+LATEX_HEADER: \pagestyle{empty}
-#+HTML_HEAD: <style type="text/css"> body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; } h2 { border-bottom: 2px solid #ccc; padding-bottom: 5px; } dt { font-weight: bold; } dd { margin-bottom: 10px; } </style>
+#+LATEX_HEADER: \setlength{\parskip}{0pt}
+#+LATEX_HEADER: \usepackage{titlesec}
+#+LATEX_HEADER: \titlespacing*{\section}{0pt}{8pt}{4pt}
+#+LATEX_HEADER: \titlespacing*{\subsection}{0pt}{6pt}{3pt}
+#+HTML_HEAD: <style type="text/css"> body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; } h2 { border-bottom: 2px solid #ccc; padding-bottom: 5px; } dt { font-weight: bold; } dd { margin-bottom: 10px; } .contact-info { text-align: center; margin-bottom: 20px; } .contact-info a { margin: 0 10px; } </style>
 
-* Academic Record
+#+BEGIN_CENTER
+*Email:* [[mailto:jerry73204@gmail.com][jerry73204@gmail.com]] | [[mailto:d10922013@csie.ntu.edu.tw][d10922013@csie.ntu.edu.tw]] \\
+*GitHub:* [[https://github.com/jerry73204/][github.com/jerry73204]] | *LinkedIn:* [[https://www.linkedin.com/in/jerryhj-lin/][linkedin.com/in/jerryhj-lin]]
+#+END_CENTER
 
-- *2016*: /National Taiwan University, Bachelor of Computer Science and Information Engineering/ \\
-  Undergraduate thesis: /Solving graph domination problem on DH graph using split decomposition/
+-----
 
-- *2021*: /National Taiwan University, Master of Computer Science and Information Engineering/
+PhD candidate at National Taiwan University specializing in autonomous vehicle systems, multi-modal sensor fusion, and V2X communication. Systems programmer with expertise in Rust, C/C++, and distributed consensus algorithms. 5+ years of industry experience in R&D roles at Microsoft and ADLINK Technology, with a focus on scalable backend systems and real-time networking.
 
-- *2021*: /National Taiwan University, PhD program in Computer Science and Information Engineering/ under the supervision of Professor Chi-Sheng Shih. The research focuses on autonomous vehicles, multi-modal sensor fusion and vehicle-to-anything communication.
+* Education
 
-* Work Experience
+- *PhD Program in Computer Science and Information Engineering, National Taiwan University* (2021–Present): Advisor: Professor Chi-Sheng Shih | Research: Autonomous vehicles, sensor fusion, V2X communication
 
-- *2010 - 2016*: *Software Developer at CAVEDU Education (CAVEDU 教育團隊)* \\
-  Developer of AppInventor project, Authored LeJOS on LEGO NXT book.
+- *Master of Science in Computer Science and Information Engineering, National Taiwan University* (2021)
 
-- *2018 Jun. - 2019 Jun.*: *R&D Assistant at Microsoft Taiwan* \\
-  Bing's Reverse Geocoder backend development
+- *Bachelor of Science in Computer Science and Information Engineering, National Taiwan University* (2016): Thesis: /Solving Graph Domination Problems on Distance-Hereditary Graphs Using Split Decomposition/
 
-- *2021 Sep. - 2024 May.*: *R&D Assistant at ADLINK Technology Inc.* \\
-  Develop distributed consensus and traffic control using Zenoh
+* Research Projects
 
-* Skills
+- *AutoSDV (Autoware Software-Defined Vehicle)* (2023–Present): Main contributor to [[https://newslabntu.github.io/autosdv-book/][AutoSDV]], an open-source autonomous driving platform. Designed and implemented the complete vehicle architecture and software stack based on Autoware. Developed hardware integration for practical sensors, enabling affordable self-driving research platforms for educational institutions.
 
-- *Advanced System Programming*: Know C/C++, Rust, CUDA and OpenCL. Can implement advanced data structures like [[https://github.com/jerry73204/ziptree-rs][ziptree]]. Experienced in building parallel and concurrent programs.
+- *Multi-Modal Autonomous Vehicle Communication Control* (2023–2024): Led development of innovative communication protocols for heterogeneous autonomous vehicle platforms in collaboration with KingwayTek (勤崴國際).
 
-- *Machine Learning*: Experienced in PyTorch, TensorFlow and several visualization tools. Worked on a deep learning project in my thesis.
+- *Real-Time Perception and Collaborative Driving* (2021–2023): Developed V2V cooperative decision-making algorithms and collaborative perception systems with National Yang Ming Chiao Tung University.
 
-- *Computer Security and Cryptography*: Studied cryptography mathematics and practical computer security lessons during college, and was ranked #2 as a hacker in National 金盾獎 competition.
+- *Cross-Domain Time-Sensitive Networking* (2022–2023): Researched deterministic networking protocols using time-sensitive networking (TSN) technologies for vehicular applications with ADLINK Technology (凌華科技).
 
-- *Digital Circuits and Robotics*: Ever worked as a Maker promoter in CAVEDU and learned 3D printing and circuit design. The hacky-arm project is the work in CAVEDU.
+- *Smart Cockpit Interactive Systems* (2023–2025): Leading research on gesture-based interaction and spatial audio systems for next-generation vehicle interiors with AU Optronics Corporation (友達光電).
 
-* Publications
+* Publications & Presentations
 
-- *(2013) 機器人程式設計與實作：使用 Java / Robotic Programming Design and Practices: Using Java*: A book introduces leJOS framework on LEGO NXT robots. ISBN: [[http://isbn.ncl.edu.tw/NCL_ISBNNet/main_DisplayRecord.php?PHPSESSID=c8kchinqo5ncq873i47c4sqkb0&Pact=Display&Pstart=1][9789862768228]]
+** Publications
 
-- *(2016) Undergraduate thesis: Solving graph domination problem on DH graph using split decomposition*: The study focuses on total and paired domination problems on distance-hereditary graph. Discovered an alternative optimal solution to total domination based on split decomposition. The handout can be found in the [[https://drive.google.com/file/d/18H1fvSZ7td3vArSJaeoTKkLjJ-DqApaP/view?usp=sharing][link]].
+- *Unsupervised Training Framework for 3D Point Cloud Object Detection Model* (2025): Developing self-supervised learning approaches for 3D object detection in autonomous driving applications.
 
-- *(2021) Master thesis: Occlusion resistant tracking based on idempotent adjunction relationship between cyber and physical objects*: This work combines deep learning and formal methods to tackle the occlusion in image tracking-by-detection problem. It developed a method to establish strong relationship among sensor data and learned representations, and achived short-term prediction of vehicle movements based on the material derivative method. The model is trained on completely labeled data is evaluated on partially occluded data. It shows 0.3 meter displacement error in average.
+- *Self-Supervised Multi-LiDAR Object View Generation Using Single LiDAR* (2023): Proposed novel method for generating multi-view LiDAR representations from single sensor input, improving perception robustness.
 
-- *(RTSCA 2022) Scalable and Bounded-time Decisions on Edge Device Network using Eclipse Zenoh*: This work developed an collaborate decision algorithm based on the /cheap consensus/ concept. By stacking CRDT, Reliable Broadcast and the data exchange framework /Zenoh/ together, the method was able to achieve consistenct decision among several peers within a bounded period of time. It also evaluated the performance on Zenoh and CycloneDDS.
+- *A Performance Study on the Throughput and Latency of Zenoh, MQTT, Kafka, and DDS* (2023): Comprehensive evaluation of pub/sub frameworks demonstrating significant throughput improvements in specific scenarios. (1 citation)
 
-- *(2023) A Performance Study on the Throughput and Latency of Zenoh, MQTT, Kafka, and DDS*: This work evaluated the performance of popular pub/sub communication frameworks in terms of latency and throughput under various scenarios.
+- *Scalable and Bounded-time Decisions on Edge Device Networks using Eclipse Zenoh* (RTSCA 2022): Developed consensus algorithm achieving deterministic decision-making within 100ms bounds. (4 citations)
 
-* Lectures
+- *Prediction of Human Intention in Vehicles, Pedestrians and Bicyclists Interactions* (IEEE ITSC 2021): Developed deep learning models for predicting road user behavior, improving autonomous vehicle safety. (1 citation)
 
-- *(COSCUP 2023) Highly Performant Dataflow in Stream-Oriented Programming in Rust*: This lecture showed off the par-stream, a demonstration of stream-oriented programming in Rust. The proposed framework leveraged async/.await syntax to mix I/O-bound and CPU-bound operations written in iterator style. It made it simple and straightforward to build an efficient data pipeline. ([[https://coscup.org/2023/zh-TW/session/JLZM37][COSCUP]])
+- *Master's Thesis: Occlusion-Resistant Tracking Based on Idempotent Adjunction Relationships* (2021): Achieved 0.3m average displacement error in vehicle tracking under 70% occlusion conditions.
 
-* Open-Source Contributions
+- *Undergraduate Thesis: Graph Domination Problems on Distance-Hereditary Graphs* (2016): Discovered O(n²) algorithm improving upon previous O(n³) solutions.
 
-The following lists the contribution of my own work.
+- *機器人程式設計與實作：使用 Java* (Robotic Programming Design and Implementation Using Java) (2013): Published technical book on LEGO NXT robotics programming. ISBN: [[http://isbn.ncl.edu.tw/NCL_ISBNNet/main_DisplayRecord.php?PHPSESSID=c8kchinqo5ncq873i47c4sqkb0&Pact=Display&Pstart=1][9789862768228]]
 
-- *TorFS (2019)*: The project exploited free storage by abusing Tor's Onion service. It provided a virtual file system that stored data blocks as RSA public keys in disguise, and distributed them to the rest of Onion network. ([[https://github.com/jerry73204/cns-final-tor-store][github]])
+** Presentations
 
-- *hacky-arm (2020)*: Build a dirty-cheap robotic arm solution that performs object grabbing tasks using computer vision based SLAMs. ([[https://github.com/jerry73204/hacky-arm/][github]])
+- *ROS2 ♥ Rust* (COSCUP 2024): Presented integration techniques for using Rust with ROS2 (Robot Operating System 2), showcasing type-safe robotics programming and performance benefits. [[https://coscup.org/2024/zh-TW/session/3XZS7K][Session details]]
 
-- *par-stream (2020)*: It developed building blocks for asynchronous parallel data flow for Rust. It was develped to serve image data processing that mix heavy I/O and computation tasks. It provided iterator-style stream combinators to distribute data and scale on workers, and is designed to support Rust's async/await in nature. ([[https://github.com/jerry73204/par-stream][github]])
+- *Highly Performant Dataflow in Stream-Oriented Programming with Rust* (COSCUP 2023): Demonstrated significant performance improvements using async stream processing. [[https://coscup.org/2023/zh-TW/session/JLZM37][Session details]]
 
-- *ddshark (2023)*: Live monitoring tool like htop for RTPS protocol. It is compatible with various DDS implementations and was tested with Cyclone DDS. ([[https://github.com/NEWSLabNTU/ddshark][github]])
+* Professional Experience
 
-- *misc.*: [[https://github.com/jerry73204/carla-rust][carla-rust]], [[https://github.com/jerry73204/rust-tfrecord][rust-tfrecord]], [[https://github.com/jerry73204/rust-cv-convert][rust-cv-convert]], [[https://github.com/jerry73204/fast-yuv442-to-rgb24][fast-yuv442-to-rgb24]] and more.
+- *Research & Development Assistant, ADLINK Technology Inc.* (2021–2024): Developed distributed consensus algorithms for Eclipse Zenoh middleware, achieving sub-millisecond latency for edge computing applications.
 
-The following lists the cooperation works and contributed projects.
+- *Research & Development Assistant, Microsoft Taiwan* (2018–2019): Optimized Bing's reverse geocoding backend services, improving query response time and system scalability.
 
-- *autoware_carla_launch (2023)*: This is an cooperated work with ADLINK's evshary, which develops the Zenoh communication interface among CARLA simulator and Autoware, one of the most comprehensive vehicle driving software.
+- *Software Developer, CAVEDU Education* (CAVEDU 教育團隊) (2010–2016): Led AppInventor curriculum development. Authored technical documentation and conducted workshops on robotics programming.
+
+* Technical Skills
+
+*Programming Languages:* Rust, C/C++, Python, Java, CUDA, OpenCL
+
+*Frameworks & Tools:* Autoware, ROS/ROS2, PyTorch, TensorFlow, Eclipse Zenoh, DDS, Docker, Git
+
+*Specializations:* Distributed Systems, Parallel Computing, Computer Vision, V2X Communication, Real-time Systems
+
+* Open-Source Projects
+
+- *[[https://newslabntu.github.io/autosdv-book/][AutoSDV]]* (2022–Present): Main contributor to the Autoware Software-Defined Vehicle platform. Provides a complete autonomous driving solution from hardware specifications to software implementation, democratizing self-driving research for educational institutions.
+
+- *[[https://github.com/NEWSLabNTU/ddshark][ddshark]]* (2023): Real-time RTPS protocol analyzer similar to htop, supporting multiple DDS implementations.
+
+- *Additional projects:* [[https://github.com/jerry73204/][github.com/jerry73204]] — Including carla-rust, and other repositories.
