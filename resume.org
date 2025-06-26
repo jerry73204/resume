@@ -18,7 +18,208 @@
 #+LATEX_HEADER: \usepackage{enumitem}
 #+LATEX_HEADER: \setlist[itemize]{topsep=0pt,itemsep=1pt,parsep=0pt,partopsep=0pt,leftmargin=15pt}
 #+LATEX_HEADER: \renewcommand{\baselinestretch}{0.95}
-#+HTML_HEAD: <style type="text/css"> body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; } h2 { border-bottom: 2px solid #ccc; padding-bottom: 5px; } dt { font-weight: bold; } dd { margin-bottom: 10px; } .contact-info { text-align: center; margin-bottom: 20px; } .contact-info a { margin: 0 10px; } </style>
+#+HTML_HEAD: <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+#+HTML_HEAD: <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+#+HTML_HEAD: <style type="text/css">
+#+HTML_HEAD: /* Base styles */
+#+HTML_HEAD: body {
+#+HTML_HEAD:   font-family: 'Open Sans', sans-serif;
+#+HTML_HEAD:   color: #333;
+#+HTML_HEAD:   line-height: 1.5;
+#+HTML_HEAD:   max-width: 800px;
+#+HTML_HEAD:   margin: 0 auto;
+#+HTML_HEAD:   padding: 30px 20px;
+#+HTML_HEAD:   background: white;
+#+HTML_HEAD: }
+#+HTML_HEAD:
+#+HTML_HEAD: /* Typography */
+#+HTML_HEAD: h1.title {
+#+HTML_HEAD:   font-family: 'Noto Serif', serif;
+#+HTML_HEAD:   font-size: 2.2em;
+#+HTML_HEAD:   font-weight: 700;
+#+HTML_HEAD:   text-align: center;
+#+HTML_HEAD:   margin: 0 0 10px 0;
+#+HTML_HEAD:   color: #1a1a1a;
+#+HTML_HEAD:   letter-spacing: -0.5px;
+#+HTML_HEAD: }
+#+HTML_HEAD:
+#+HTML_HEAD: h2 {
+#+HTML_HEAD:   font-family: 'Open Sans', sans-serif;
+#+HTML_HEAD:   font-size: 1.3em;
+#+HTML_HEAD:   font-weight: 600;
+#+HTML_HEAD:   text-transform: uppercase;
+#+HTML_HEAD:   letter-spacing: 1px;
+#+HTML_HEAD:   color: #8B4513;
+#+HTML_HEAD:   margin: 20px 0 10px 0;
+#+HTML_HEAD:   padding: 0;
+#+HTML_HEAD:   border: none;
+#+HTML_HEAD: }
+#+HTML_HEAD:
+#+HTML_HEAD: h3 {
+#+HTML_HEAD:   font-family: 'Open Sans', sans-serif;
+#+HTML_HEAD:   font-size: 1.1em;
+#+HTML_HEAD:   font-weight: 600;
+#+HTML_HEAD:   color: #4a4a4a;
+#+HTML_HEAD:   margin: 15px 0 8px 0;
+#+HTML_HEAD: }
+#+HTML_HEAD:
+#+HTML_HEAD: /* Hide org-mode elements */
+#+HTML_HEAD: #table-of-contents { display: none; }
+#+HTML_HEAD: #org-div-home-and-up { display: none; }
+#+HTML_HEAD: #postamble { display: none; }
+#+HTML_HEAD:
+#+HTML_HEAD: /* Contact info styling */
+#+HTML_HEAD: #content > p:first-of-type {
+#+HTML_HEAD:   text-align: center;
+#+HTML_HEAD:   margin: 0 0 20px 0;
+#+HTML_HEAD:   font-size: 0.95em;
+#+HTML_HEAD:   color: #555;
+#+HTML_HEAD: }
+#+HTML_HEAD:
+#+HTML_HEAD: #content > p:first-of-type b {
+#+HTML_HEAD:   font-weight: 600;
+#+HTML_HEAD:   color: #333;
+#+HTML_HEAD: }
+#+HTML_HEAD:
+#+HTML_HEAD: #content > p:first-of-type b:nth-of-type(1)::before {
+#+HTML_HEAD:   content: '\f0e0';
+#+HTML_HEAD:   font-family: 'Font Awesome 6 Free';
+#+HTML_HEAD:   font-weight: 400;
+#+HTML_HEAD:   margin-right: 5px;
+#+HTML_HEAD:   font-size: 0.9em;
+#+HTML_HEAD: }
+#+HTML_HEAD:
+#+HTML_HEAD: #content > p:first-of-type b:nth-of-type(2)::before {
+#+HTML_HEAD:   content: '\f09b';
+#+HTML_HEAD:   font-family: 'Font Awesome 6 Free';
+#+HTML_HEAD:   font-weight: 400;
+#+HTML_HEAD:   margin-right: 5px;
+#+HTML_HEAD:   font-size: 0.9em;
+#+HTML_HEAD: }
+#+HTML_HEAD:
+#+HTML_HEAD: #content > p:first-of-type b:nth-of-type(3)::before {
+#+HTML_HEAD:   content: '\f08c';
+#+HTML_HEAD:   font-family: 'Font Awesome 6 Free';
+#+HTML_HEAD:   font-weight: 400;
+#+HTML_HEAD:   margin-right: 5px;
+#+HTML_HEAD:   font-size: 0.9em;
+#+HTML_HEAD: }
+#+HTML_HEAD:
+#+HTML_HEAD: /* Horizontal rule */
+#+HTML_HEAD: hr {
+#+HTML_HEAD:   border: none;
+#+HTML_HEAD:   border-top: 1px solid #E0E0E0;
+#+HTML_HEAD:   margin: 15px 0;
+#+HTML_HEAD: }
+#+HTML_HEAD:
+#+HTML_HEAD: /* Section dividers */
+#+HTML_HEAD: .outline-2 {
+#+HTML_HEAD:   border-bottom: 1px solid #E0E0E0;
+#+HTML_HEAD:   padding-bottom: 15px;
+#+HTML_HEAD:   margin-bottom: 0;
+#+HTML_HEAD: }
+#+HTML_HEAD:
+#+HTML_HEAD: .outline-2:last-child {
+#+HTML_HEAD:   border-bottom: none;
+#+HTML_HEAD: }
+#+HTML_HEAD:
+#+HTML_HEAD: /* Summary paragraph - use structural targeting */
+#+HTML_HEAD: #content > hr + p {
+#+HTML_HEAD:   font-size: 1.05em;
+#+HTML_HEAD:   line-height: 1.7;
+#+HTML_HEAD:   margin: 0 auto 15px auto;
+#+HTML_HEAD:   padding: 15px 30px;
+#+HTML_HEAD:   color: #444;
+#+HTML_HEAD:   background-color: #f8f8f8;
+#+HTML_HEAD:   border-left: 3px solid #8B4513;
+#+HTML_HEAD:   text-align: left;
+#+HTML_HEAD:   width: 85%;
+#+HTML_HEAD: }
+#+HTML_HEAD:
+#+HTML_HEAD: /* Links */
+#+HTML_HEAD: a {
+#+HTML_HEAD:   color: #1e4d8b;
+#+HTML_HEAD:   text-decoration: none;
+#+HTML_HEAD: }
+#+HTML_HEAD:
+#+HTML_HEAD: a:hover {
+#+HTML_HEAD:   text-decoration: underline;
+#+HTML_HEAD: }
+#+HTML_HEAD:
+#+HTML_HEAD: /* Lists */
+#+HTML_HEAD: ul {
+#+HTML_HEAD:   margin: 0 0 10px 0;
+#+HTML_HEAD:   padding-left: 0;
+#+HTML_HEAD:   list-style: none;
+#+HTML_HEAD: }
+#+HTML_HEAD:
+#+HTML_HEAD: ul li {
+#+HTML_HEAD:   position: relative;
+#+HTML_HEAD:   padding-left: 20px;
+#+HTML_HEAD:   margin-bottom: 8px;
+#+HTML_HEAD: }
+#+HTML_HEAD:
+#+HTML_HEAD: ul li::before {
+#+HTML_HEAD:   content: '•';
+#+HTML_HEAD:   position: absolute;
+#+HTML_HEAD:   left: 0;
+#+HTML_HEAD:   color: #8B4513;
+#+HTML_HEAD:   font-weight: bold;
+#+HTML_HEAD: }
+#+HTML_HEAD:
+#+HTML_HEAD: /* Bold text styling */
+#+HTML_HEAD: b, strong {
+#+HTML_HEAD:   font-weight: 700;
+#+HTML_HEAD:   color: #1a1a1a;
+#+HTML_HEAD: }
+#+HTML_HEAD:
+#+HTML_HEAD: /* Italic text for institutions/companies */
+#+HTML_HEAD: em, i {
+#+HTML_HEAD:   font-style: italic;
+#+HTML_HEAD:   color: #555;
+#+HTML_HEAD: }
+#+HTML_HEAD:
+#+HTML_HEAD: /* Ensure project/publication titles are prominent */
+#+HTML_HEAD: ul li > b:first-child {
+#+HTML_HEAD:   font-weight: 700;
+#+HTML_HEAD:   color: #1a1a1a;
+#+HTML_HEAD:   font-size: 1em;
+#+HTML_HEAD:   font-style: normal;
+#+HTML_HEAD: }
+#+HTML_HEAD:
+#+HTML_HEAD: /* Date styling for specific sections */
+#+HTML_HEAD: #outline-container-org7d234cf ul li > b:nth-last-child(2),
+#+HTML_HEAD: #outline-container-orgc31352f ul li > b:last-child {
+#+HTML_HEAD:   font-size: 0.9em;
+#+HTML_HEAD:   font-style: italic;
+#+HTML_HEAD:   font-weight: 400;
+#+HTML_HEAD:   color: #666;
+#+HTML_HEAD:   display: inline;
+#+HTML_HEAD:   margin-right: 8px;
+#+HTML_HEAD: }
+#+HTML_HEAD:
+#+HTML_HEAD: /* Technical skills section */
+#+HTML_HEAD: #outline-container-org3d0c1b8 p,
+#+HTML_HEAD: #outline-container-orgc43e8ba p,
+#+HTML_HEAD: .outline-text-2 p {
+#+HTML_HEAD:   margin: 5px 0;
+#+HTML_HEAD: }
+#+HTML_HEAD:
+#+HTML_HEAD: /* Remove any unwanted styling overrides */
+#+HTML_HEAD:
+#+HTML_HEAD: /* Print styles */
+#+HTML_HEAD: @media print {
+#+HTML_HEAD:   body { padding: 0; margin: 0; }
+#+HTML_HEAD:   .outline-2 { page-break-inside: avoid; }
+#+HTML_HEAD: }
+#+HTML_HEAD:
+#+HTML_HEAD: /* Responsive */
+#+HTML_HEAD: @media (max-width: 600px) {
+#+HTML_HEAD:   body { padding: 20px 15px; }
+#+HTML_HEAD:   h1.title { font-size: 1.8em; }
+#+HTML_HEAD:   ul li b:first-child { display: block; margin-bottom: 5px; }
+#+HTML_HEAD: }
+#+HTML_HEAD: </style>
 
 #+BEGIN_CENTER
 *Email:* [[mailto:jerry73204@gmail.com][jerry73204@gmail.com]] | [[mailto:d10922013@csie.ntu.edu.tw][d10922013@csie.ntu.edu.tw]] \\
